@@ -72,23 +72,25 @@
     lp: lp {
         compatible = "zmk,behavior-hold-tap";
         label = "LAYER|KP";
-        #binding-cells = <2>;
         flavor = "hold-preferred";
-        tapping-term-ms = <300>;
+        tapping-term-ms = <250>;
+        quick-tap-ms = <250>;
         bindings =
             <&mo>,
             <&kp>;
+        #binding-cells = <2>;
     };
     cm: cm {
         compatible = "zmk,behavior-hold-tap";
         label = "CUSTOM_MT";
-        #binding-cells = <2>;
         flavor = "tap-preferred";
         tapping-term-ms = <250>;
-        global-quick-tap;
+        quick-tap-ms = <250>;
+        //global-quick-tap;
         bindings =
             <&kp>,
             <&kp>;
+        #binding-cells = <2>;
     };
 
     behaviors {
@@ -103,7 +105,7 @@
             label = "BASE";
             bindings = <
                    &kp Q       &kp W             &kp E          &kp R               &kp T          &kp Y          &kp U            &kp I       &kp O            &kp P
-             &cm LCTRL A  &cm LALT S        &cm LGUI D    &cm LSHFT F               &kp G          &kp H    &cm RSHFT J       &cm RGUI K  &cm RALT L  &cm RCTRL MINUS
+             &cm LCTRL F  &cm LALT A        &cm LGUI D    &cm LSHFT S               &kp G          &kp H    &cm RSHFT J       &cm RGUI K  &cm RALT L  &cm RCTRL MINUS
 &lp NUM ESC        &kp Z       &kp X             &kp C          &kp V               &kp B          &kp N          &kp M        &kp COMMA     &kp DOT         &kp FSLH  &lp FNC TAB
                                       &cm LSHIFT LANG2  &lp SYM SPACE  &mt LGUI BACKSPACE    &lp SYM TAB  &lp NAV ENTER  &cm RSHFT LANG1
             >;
@@ -146,7 +148,7 @@
         };
 
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-        //nav_layer { label = "NAV"; bindings = <
+        //nav_layer { label = "template"; bindings = <
         //          &none          &none          &none          &none          &none          &none          &none          &none          &none          &none
         //          &none          &none          &none          &none          &none          &none          &none          &none          &none          &none          
         //&none          &none          &none          &none          &none          &none          &none          &none          &none          &none          &none          &none          

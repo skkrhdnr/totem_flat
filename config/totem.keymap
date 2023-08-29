@@ -198,6 +198,17 @@
 
         #binding-cells = <2>;
     };
+    lpy: lpy {
+        compatible = "zmk,behavior-hold-tap";
+        label = "LAYER|KP";
+        flavor = "hold-preferred";
+        tapping-term-ms = <250>;
+        bindings =
+            <&mo>,
+            <&kp>;
+
+        #binding-cells = <2>;
+    };
     cm: cm {
         compatible = "zmk,behavior-hold-tap";
         label = "CUSTOM_MT";
@@ -228,7 +239,7 @@
                    &kp Q       &kp W             &kp E          &kp R               &kp T          &kp Y          &kp U            &kp I       &kp O            &kp P
              &cm LCTRL F  &cm LALT A        &cm LGUI D    &cm LSHFT S               &kp G          &kp H    &cm RSHFT J       &cm RGUI K  &cm RALT L  &cm RCTRL MINUS
 &lp NUM ESC        &kp Z       &kp X             &kp C          &kp V               &kp B          &kp N          &kp M        &kp COMMA     &kp DOT         &kp FSLH  &lp FNC TAB
-                                      &lp 2 LANGUAGE_2  &lp SYM SPACE  &cm RGUI BACKSPACE    &lp SYM TAB  &lp NAV ENTER  &cm RSHFT LANG1
+                                      &lp 2 LANGUAGE_2  &lp SYM SPACE  &cm RGUI BACKSPACE    &lp SYM TAB  &lpy NAV ENTER  &cm RSHFT LANG1
             >;
         };
 

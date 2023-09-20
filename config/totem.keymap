@@ -43,7 +43,7 @@
 
         combo_esc {
             timeout-ms = <50>;
-            key-positions = <12 11>;
+            key-positions = <12 11 13>;
             bindings = <&kp ESC>;
         };
 
@@ -130,6 +130,11 @@
             timeout-ms = <50>;
             layers = <0>;
         };
+
+        combo_newline {
+            bindings = <&new_line>;
+            key-positions = <16 36>;
+        };
     };
 
     macros {
@@ -162,6 +167,12 @@
             label = "YOROSIHKU";
             #binding-cells = <0>;
             bindings = <&kp LANG1 &kp Y &kp O &kp R &kp O &kp S &kp I &kp K &kp U &kp O &kp N &kp E &kp G &kp A &kp I &kp I &kp T &kp A &kp S &kp I &kp M &kp A &kp S &kp U>;
+        };
+        new_line: new_line {
+            compatible = "zmk,behavior-macro";
+            label = "NEW_LINE";
+            #binding-cells = <0>;
+            bindings = <&kp RG(RIGHT) &kp ENTER>;
         };
     };
 
@@ -215,10 +226,10 @@
         base_layer {
             label = "BASE";
             bindings = <
-             &kp Q        &kp W       &kp E             &kp R          &kp T                 &kp Y      &kp U           &kp I            &kp O       &kp P
-             &cm LCTRL F  &cm LALT A  &cm LGUI D        &cm LSHFT S    &kp G                 &kp H      &cm RSHFT J     &cm RGUI K       &cm RALT L  &cm RCTRL MINUS
-&lp NUM ESC  &kp V        &kp X       &kp C             &kp Z          &kp B                 &kp N      &kp M           &kp COMMA        &kp DOT     &kp FSLH         &lp FNC UNDERSCORE
-                                      &lp 2 LANGUAGE_2  &lp SYM SPACE  &cm RGUI BACKSPACE    &lp 4 TAB  &lpy NAV ENTER  &cm RSHFT LANG1
+             &kp Q        &kp W       &kp E             &kp R          &kp T                 &kp Y      &kp U           &kp I             &kp O       &kp P
+             &cm LCTRL F  &cm LALT A  &cm LGUI D        &cm LSHFT S    &kp G                 &kp H      &cm RSHFT J     &cm RGUI K        &cm RALT L  &cm RCTRL MINUS
+&lp NUM ESC  &kp V        &kp X       &kp C             &kp Z          &kp B                 &kp N      &kp M           &kp COMMA         &kp DOT     &kp FSLH         &lp FNC UNDERSCORE
+                                      &lp 2 LANGUAGE_2  &lp SYM SPACE  &cm RGUI BACKSPACE    &kp RSHFT  &lpy NAV ENTER  &lp 4 LANGUAGE_1
             >;
         };
 
@@ -263,10 +274,10 @@
         fnc_layer {
             label = "FNC";
             bindings = <
-       &none        &kp RC(RS(TAB))   &kp RG(RA(UP))    &kp RC(TAB)        &none          &none       &none              &none         &none         &none
-       &kp RA(TAB)  &kp RG(RA(LEFT))  &kp RG(RA(DOWN))  &kp RG(RA(RIGHT))  &kp RG(TAB)    &none       &none              &none         &none         &none
-&none  &none        &kp RA(UP)        &kp RG(RA(N))     &kp RA(DOWN)       &none          &kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOL_UP  &kp C_BRI_DN  &kp C_BRI_UP  &none
-                                      &bt_0             &bt_1              &bt_2          &none       &none              &bt BT_CLR
+       &none        &kp RC(RS(TAB))   &kp RG(RA(UP))    &kp RC(TAB)        &none          &bt BT_CLR  &bt_0         &bt_1         &bt_2          &none
+       &kp RA(TAB)  &kp RG(RA(LEFT))  &kp RG(RA(DOWN))  &kp RG(RA(RIGHT))  &kp RG(TAB)    &kp K_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_BRI_DEC  &kp C_BRI_INC
+&none  &none        &kp RA(UP)        &kp RG(RA(N))     &kp RA(DOWN)       &none          &none       &none         &none         &none          &none          &none
+                                      &none             &none              &none          &none       &none         &none
             >;
         };
 

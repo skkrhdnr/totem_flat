@@ -43,7 +43,7 @@
 
         combo_esc {
             timeout-ms = <50>;
-            key-positions = <10 11>;
+            key-positions = <12 11>;
             bindings = <&kp ESC>;
         };
 
@@ -155,13 +155,13 @@
             compatible = "zmk,behavior-macro";
             label = "ARIGATOU";
             #binding-cells = <0>;
-            bindings = <&kp LANGUAGE_2 &kp A &kp R &kp I &kp G &kp A &kp T &kp O &kp U &kp G &kp O &kp Z &kp A &kp I &kp M &kp A &kp S &kp U>;
+            bindings = <&kp LANG1 &kp A &kp R &kp I &kp G &kp A &kp T &kp O &kp U &kp G &kp O &kp Z &kp A &kp I &kp M &kp A &kp S &kp U>;
         };
         yorosihku: yorosihku {
             compatible = "zmk,behavior-macro";
             label = "YOROSIHKU";
             #binding-cells = <0>;
-            bindings = <&kp LANGUAGE_2 &kp Y &kp O &kp R &kp O &kp S &kp I &kp K &kp U &kp O &kp N &kp E &kp G &kp A &kp I &kp I &kp T &kp A &kp S &kp I &kp M &kp A &kp S &kp U>;
+            bindings = <&kp LANG1 &kp Y &kp O &kp R &kp O &kp S &kp I &kp K &kp U &kp O &kp N &kp E &kp G &kp A &kp I &kp I &kp T &kp A &kp S &kp I &kp M &kp A &kp S &kp U>;
         };
     };
 
@@ -217,7 +217,7 @@
             bindings = <
              &kp Q        &kp W       &kp E             &kp R          &kp T                 &kp Y      &kp U           &kp I            &kp O       &kp P
              &cm LCTRL F  &cm LALT A  &cm LGUI D        &cm LSHFT S    &kp G                 &kp H      &cm RSHFT J     &cm RGUI K       &cm RALT L  &cm RCTRL MINUS
-&lp NUM ESC  &kp X        &kp X       &kp C             &kp Z          &kp B                 &kp N      &kp M           &kp COMMA        &kp DOT     &kp FSLH         &lp FNC UNDERSCORE
+&lp NUM ESC  &kp V        &kp X       &kp C             &kp Z          &kp B                 &kp N      &kp M           &kp COMMA        &kp DOT     &kp FSLH         &lp FNC UNDERSCORE
                                       &lp 2 LANGUAGE_2  &lp SYM SPACE  &cm RGUI BACKSPACE    &lp 4 TAB  &lpy NAV ENTER  &cm RSHFT LANG1
             >;
         };

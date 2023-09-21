@@ -136,13 +136,13 @@
             key-positions = <16 36>;
         };
 
-        combo_num, {
+        combo_num_comma {
             bindings = <&kp COMMA>;
             key-positions = <16 17>;
             layers = <2>;
         };
 
-        combo_num. {
+        combo_num_period {
             bindings = <&kp PERIOD>;
             key-positions = <17 18>;
             layers = <2>;

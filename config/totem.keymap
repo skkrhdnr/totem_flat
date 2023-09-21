@@ -77,14 +77,14 @@
 
         combo_pageup {
             bindings = <&kp PAGE_UP>;
-            key-positions = <22 23>;
+            key-positions = <1 2>;
             layers = <0>;
             timeout-ms = <50>;
         };
 
         combo_pagedown {
             bindings = <&kp PAGE_DOWN>;
-            key-positions = <23 24>;
+            key-positions = <2 3>;
             layers = <0>;
             timeout-ms = <50>;
         };
@@ -134,6 +134,18 @@
         combo_newline {
             bindings = <&new_line>;
             key-positions = <16 36>;
+        };
+
+        combo_num, {
+            bindings = <&kp COMMA>;
+            key-positions = <16 17>;
+            layers = <2>;
+        };
+
+        combo_num. {
+            bindings = <&kp PERIOD>;
+            key-positions = <17 18>;
+            layers = <2>;
         };
     };
 
@@ -274,10 +286,10 @@
         fnc_layer {
             label = "FNC";
             bindings = <
-       &none        &kp RC(RS(TAB))   &kp RG(RA(UP))    &kp RC(TAB)        &none          &bt BT_CLR  &bt_0         &bt_1         &bt_2          &none
-       &kp RA(TAB)  &kp RG(RA(LEFT))  &kp RG(RA(DOWN))  &kp RG(RA(RIGHT))  &kp RG(TAB)    &kp K_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_BRI_DEC  &kp C_BRI_INC
-&none  &none        &kp RA(UP)        &kp RG(RA(N))     &kp RA(DOWN)       &none          &none       &none         &none         &none          &none          &none
-                                      &none             &none              &none          &none       &none         &none
+       &none        &kp RC(RS(TAB))   &kp RG(RA(UP))    &kp RC(TAB)        &none          &bt BT_CLR   &bt_0         &bt_1         &bt_2          &none
+       &kp RA(TAB)  &kp RG(RA(LEFT))  &kp RG(RA(DOWN))  &kp RG(RA(RIGHT))  &kp RG(TAB)    &kp K_MUTE   &kp C_VOL_DN  &kp C_VOL_UP  &kp C_BRI_DEC  &kp C_BRI_INC
+&none  &none        &kp RA(UP)        &kp RG(RA(N))     &kp RA(DOWN)       &none          &kp C_POWER  &kp K_POWER   &none         &none          &none          &none
+                                      &none             &none              &none          &none        &none         &none
             >;
         };
 

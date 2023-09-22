@@ -75,20 +75,6 @@
             timeout-ms = <50>;
         };
 
-        combo_pageup {
-            bindings = <&kp PAGE_UP>;
-            key-positions = <1 2>;
-            layers = <0>;
-            timeout-ms = <50>;
-        };
-
-        combo_pagedown {
-            bindings = <&kp PAGE_DOWN>;
-            key-positions = <2 3>;
-            layers = <0>;
-            timeout-ms = <50>;
-        };
-
         combo_macro_arigatou {
             bindings = <&arigatou>;
             key-positions = <3 11 7>;
@@ -146,6 +132,16 @@
             bindings = <&kp PERIOD>;
             key-positions = <17 18>;
             layers = <2>;
+        };
+
+        combo_tag_left {
+            bindings = <&kp TAB>;
+            key-positions = <2 3>;
+        };
+
+        combo_y {
+            bindings = <&kp Y>;
+            key-positions = <3 4>;
         };
     };
 
@@ -238,10 +234,10 @@
         base_layer {
             label = "BASE";
             bindings = <
-             &kp Q        &kp W       &kp E             &kp R          &kp T                 &kp Y      &kp U           &kp I             &kp O       &kp P
-             &cm LCTRL F  &cm LALT A  &cm LGUI D        &cm LSHFT S    &kp G                 &kp H      &cm RSHFT J     &cm RGUI K        &cm RALT L  &cm RCTRL MINUS
-&lp NUM ESC  &kp V        &kp X       &kp C             &kp Z          &kp B                 &kp N      &kp M           &kp COMMA         &kp DOT     &kp FSLH         &lp FNC UNDERSCORE
-                                      &lp 2 LANGUAGE_2  &lp SYM SPACE  &cm RGUI BACKSPACE    &kp RSHFT  &lpy NAV ENTER  &lp 4 LANGUAGE_1
+               &kp Q        &kp W       &kp E             &kp R          &kp T                 &kp Y      &kp U           &kp I             &kp O       &kp P
+               &cm LCTRL F  &cm LALT A  &cm LGUI D        &cm LSHFT S    &kp G                 &kp H      &cm RSHFT J     &cm RGUI K        &cm RALT L  &cm RCTRL MINUS
+&cm LSHFT ESC  &kp V        &kp X       &kp C             &kp Z          &kp B                 &kp N      &kp M           &kp COMMA         &kp DOT     &kp FSLH         &lp FNC UNDERSCORE
+                                        &lp 2 LANGUAGE_2  &lp SYM SPACE  &cm RGUI BACKSPACE    &kp RSHFT  &lpy NAV ENTER  &lp 4 LANGUAGE_1
             >;
         };
 
@@ -253,7 +249,7 @@
        &none         &kp HOME        &kp UP_ARROW    &kp END          &kp LG(T)        &none      &none      &none     &none     &none
        &kp LA(LEFT)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LA(RIGHT)    &none      &kp RSHFT  &kp RGUI  &kp RALT  &kp RCTRL
 &none  &kp LG(V)     &kp LG(X)       &kp LG(C)       &kp LG(Z)        &none            &kp RG(N)  &none      &none     &none     &none      &none
-                                     &kp TAB         &kp ESC          &none            &none      &none      &none
+                                     &kp LS(TAB)     &kp TAB          &none            &none      &none      &none
             >;
         };
 
@@ -262,10 +258,10 @@
         num_layer {
             label = "NUM";
             bindings = <
-       &none  &kp F7  &kp F8  &kp F9  &kp F12    &none     &kp N7  &kp N8  &kp N9  &none
-       &none  &kp F4  &kp F5  &kp F6  &kp F11    &kp PLUS  &kp N4  &kp N5  &kp N6  &kp MINUS
-&none  &none  &kp F1  &kp F2  &kp F3  &kp F10    &kp STAR  &kp N1  &kp N2  &kp N3  &kp FSLH   &none
-                      &none   &none   &none      &none     &kp N0  &kp N0
+         &none  &kp F7  &kp F8  &kp F9  &kp F12    &none     &kp N7  &kp N8  &kp N9  &none
+         &none  &kp F4  &kp F5  &kp F6  &kp F11    &kp PLUS  &kp N4  &kp N5  &kp N6  &kp MINUS
+&kp TAB  &none  &kp F1  &kp F2  &kp F3  &kp F10    &kp STAR  &kp N1  &kp N2  &kp N3  &kp FSLH   &none
+                        &none   &none   &none      &none     &kp N0  &kp N0
             >;
         };
 
@@ -286,10 +282,10 @@
         fnc_layer {
             label = "FNC";
             bindings = <
-       &none        &kp RC(RS(TAB))   &kp RG(RA(UP))    &kp RC(TAB)        &none          &bt BT_CLR   &bt_0         &bt_1         &bt_2          &none
-       &kp RA(TAB)  &kp RG(RA(LEFT))  &kp RG(RA(DOWN))  &kp RG(RA(RIGHT))  &kp RG(TAB)    &kp K_MUTE   &kp C_VOL_DN  &kp C_VOL_UP  &kp C_BRI_DEC  &kp C_BRI_INC
-&none  &none        &kp RA(UP)        &kp RG(RA(N))     &kp RA(DOWN)       &none          &kp C_POWER  &kp K_POWER   &none         &none          &none          &none
-                                      &none             &none              &none          &none        &none         &none
+       &none        &kp RC(RS(TAB))   &kp RG(RA(UP))    &kp RC(TAB)        &none          &bt BT_CLR  &bt_0          &bt_1          &bt_2  &none
+       &kp RA(TAB)  &kp RG(RA(LEFT))  &kp RG(RA(DOWN))  &kp RG(RA(RIGHT))  &kp RG(TAB)    &kp K_MUTE  &kp C_VOL_DN   &kp C_VOL_UP   &none  &none
+&none  &none        &kp RA(UP)        &kp RG(RA(N))     &kp RA(DOWN)       &none          &none       &kp C_BRI_DEC  &kp C_BRI_INC  &none  &none  &none
+                                      &none             &none              &none          &none       &none          &none
             >;
         };
 

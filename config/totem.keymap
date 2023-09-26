@@ -43,7 +43,7 @@
 
         combo_esc {
             timeout-ms = <50>;
-            key-positions = <12 11 13>;
+            key-positions = <1 3>;
             bindings = <&kp ESC>;
         };
 
@@ -52,6 +52,7 @@
             key-positions = <6 7>;
             timeout-ms = <50>;
             layers = <0>;
+            slow-release;
         };
 
         combo_shft-tab {
@@ -103,45 +104,24 @@
             layers = <0>;
         };
 
-        combo_opt-left {
-            bindings = <&kp LA(LEFT)>;
-            key-positions = <16 27>;
-            timeout-ms = <50>;
-            layers = <0>;
-        };
-
-        combo_opt_right {
-            bindings = <&kp LA(RIGHT)>;
-            key-positions = <18 29>;
-            timeout-ms = <50>;
-            layers = <0>;
-        };
-
         combo_newline {
             bindings = <&new_line>;
             key-positions = <16 36>;
         };
 
-        combo_num_comma {
-            bindings = <&kp COMMA>;
-            key-positions = <16 17>;
-            layers = <2>;
-        };
-
-        combo_num_period {
-            bindings = <&kp PERIOD>;
-            key-positions = <17 18>;
-            layers = <2>;
-        };
-
         combo_tag_left {
             bindings = <&kp TAB>;
-            key-positions = <2 3>;
+            key-positions = <23 24>;
         };
 
         combo_y {
             bindings = <&kp Y>;
-            key-positions = <3 4>;
+            key-positions = <24 25>;
+        };
+
+        combo_fa-q {
+            bindings = <&kp Q>;
+            key-positions = <10 11>;
         };
     };
 

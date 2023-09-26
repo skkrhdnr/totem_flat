@@ -52,7 +52,6 @@
             key-positions = <6 7>;
             timeout-ms = <50>;
             layers = <0>;
-            slow-release;
         };
 
         combo_shft-tab {
@@ -119,9 +118,19 @@
             key-positions = <24 25>;
         };
 
-        combo_fa-q {
+        combo_q {
             bindings = <&kp Q>;
-            key-positions = <10 11>;
+            key-positions = <0 1>;
+        };
+
+        combo_f {
+            bindings = <&kp F>;
+            key-positions = <11 12>;
+        };
+
+        combo_v {
+            bindings = <&kp V>;
+            key-positions = <22 23>;
         };
     };
 

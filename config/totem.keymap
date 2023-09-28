@@ -43,11 +43,12 @@
 
         combo_esc {
             timeout-ms = <50>;
-            key-positions = <1 3>;
+            key-positions = <11 13>;
             bindings = <&kp ESC>;
+            layers = <0>;
         };
 
-        combo_tab {
+        combo_tab_right {
             bindings = <&kp TAB>;
             key-positions = <6 7>;
             timeout-ms = <50>;
@@ -59,20 +60,6 @@
             key-positions = <5 6>;
             timeout-ms = <50>;
             layers = <0>;
-        };
-
-        combo_home {
-            bindings = <&kp LG(LEFT)>;
-            key-positions = <6 16>;
-            timeout-ms = <50>;
-            layers = <0>;
-        };
-
-        combo_end {
-            bindings = <&kp LG(RIGHT)>;
-            key-positions = <8 18>;
-            layers = <0>;
-            timeout-ms = <50>;
         };
 
         combo_macro_arigatou {
@@ -103,34 +90,46 @@
             layers = <0>;
         };
 
-        combo_newline {
-            bindings = <&new_line>;
+        combo_shita_line {
+            bindings = <&shita_line>;
             key-positions = <16 36>;
         };
 
-        combo_tag_left {
+        combo_tab_left {
             bindings = <&kp TAB>;
             key-positions = <23 24>;
         };
 
         combo_y {
             bindings = <&kp Y>;
-            key-positions = <24 25>;
-        };
-
-        combo_q {
-            bindings = <&kp Q>;
-            key-positions = <0 1>;
-        };
-
-        combo_f {
-            bindings = <&kp F>;
-            key-positions = <11 12>;
+            key-positions = <3 4>;
         };
 
         combo_v {
             bindings = <&kp V>;
             key-positions = <22 23>;
+        };
+
+        combo_num_. {
+            bindings = <&kp DOT>;
+            key-positions = <28 29>;
+            layers = <2>;
+        };
+
+        combo_num_, {
+            bindings = <&kp COMMA>;
+            key-positions = <27 28>;
+            layers = <2>;
+        };
+
+        combo_left_enter {
+            bindings = <&kp ENTER>;
+            key-positions = <12 33>;
+        };
+
+        combo_ue_line {
+            bindings = <&ue_line>;
+            key-positions = <15 36>;
         };
     };
 
@@ -165,11 +164,17 @@
             #binding-cells = <0>;
             bindings = <&kp LANG1 &kp Y &kp O &kp R &kp O &kp S &kp I &kp K &kp U &kp O &kp N &kp E &kp G &kp A &kp I &kp I &kp T &kp A &kp S &kp I &kp M &kp A &kp S &kp U>;
         };
-        new_line: new_line {
+        shita_line: shita_line {
             compatible = "zmk,behavior-macro";
-            label = "NEW_LINE";
+            label = "SHITA_LINE";
             #binding-cells = <0>;
             bindings = <&kp RG(RIGHT) &kp ENTER>;
+        };
+        ue_line: ue_line {
+            compatible = "zmk,behavior-macro";
+            label = "UE_LINE";
+            #binding-cells = <0>;
+            bindings = <&kp RG(LEFT) &kp ENTER>;
         };
     };
 
@@ -247,10 +252,10 @@
         num_layer {
             label = "NUM";
             bindings = <
-         &none  &kp F7  &kp F8  &kp F9  &kp F12    &none     &kp N7  &kp N8  &kp N9  &none
-         &none  &kp F4  &kp F5  &kp F6  &kp F11    &kp PLUS  &kp N4  &kp N5  &kp N6  &kp MINUS
-&kp TAB  &none  &kp F1  &kp F2  &kp F3  &kp F10    &kp STAR  &kp N1  &kp N2  &kp N3  &kp FSLH   &none
-                        &none   &none   &none      &none     &kp N0  &kp N0
+       &none  &kp F7  &kp F8  &kp F9  &kp F12    &none     &kp N7  &kp N8  &kp N9  &none
+       &none  &kp F4  &kp F5  &kp F6  &kp F11    &kp PLUS  &kp N4  &kp N5  &kp N6  &kp MINUS
+&none  &none  &kp F1  &kp F2  &kp F3  &kp F10    &kp STAR  &kp N1  &kp N2  &kp N3  &kp FSLH   &none
+                      &none   &none   &none      &none     &kp N0  &kp N0
             >;
         };
 
@@ -273,7 +278,7 @@
             bindings = <
        &none        &kp RC(RS(TAB))   &kp RG(RA(UP))    &kp RC(TAB)        &none          &bt BT_CLR  &bt_0          &bt_1          &bt_2  &none
        &kp RA(TAB)  &kp RG(RA(LEFT))  &kp RG(RA(DOWN))  &kp RG(RA(RIGHT))  &kp RG(TAB)    &kp K_MUTE  &kp C_VOL_DN   &kp C_VOL_UP   &none  &none
-&none  &none        &kp RA(UP)        &kp RG(RA(N))     &kp RA(DOWN)       &none          &none       &kp C_BRI_DEC  &kp C_BRI_INC  &none  &none  &none
+&none  &none        &kp RA(UP)        &kp RG(RA(N))     &kp RA(DOWN)       &none          &none       &kp C_BRI_DEC  &kp C_BRI_INC  &none  &none  &kp C_POWER
                                       &none             &none              &none          &none       &none          &none
             >;
         };

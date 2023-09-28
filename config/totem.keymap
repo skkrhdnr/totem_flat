@@ -174,7 +174,7 @@
             compatible = "zmk,behavior-macro";
             label = "UE_LINE";
             #binding-cells = <0>;
-            bindings = <&kp RG(LEFT) &kp ENTER>;
+            bindings = <&kp RG(LEFT) &kp ENTER &kp UP>;
         };
     };
 

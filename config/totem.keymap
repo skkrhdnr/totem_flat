@@ -97,7 +97,7 @@
 
         combo_tab_left {
             bindings = <&kp TAB>;
-            key-positions = <23 24>;
+            key-positions = <2 3>;
         };
 
         combo_y {
@@ -124,7 +124,7 @@
 
         combo_left_enter {
             bindings = <&kp ENTER>;
-            key-positions = <12 33>;
+            key-positions = <33 13>;
         };
 
         combo_ue_line {

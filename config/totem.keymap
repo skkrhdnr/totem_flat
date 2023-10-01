@@ -42,7 +42,7 @@
         compatible = "zmk,combos";
 
         combo_esc {
-            timeout-ms = <50>;
+            timeout-ms = <30>;
             key-positions = <13 14>;
             bindings = <&kp ESC>;
             layers = <0>;
@@ -51,14 +51,14 @@
         combo_tab_right {
             bindings = <&kp TAB>;
             key-positions = <6 7>;
-            timeout-ms = <50>;
+            timeout-ms = <30>;
             layers = <0>;
         };
 
         combo_shft-tab {
             bindings = <&kp LS(TAB)>;
             key-positions = <5 6>;
-            timeout-ms = <50>;
+            timeout-ms = <30>;
             layers = <0>;
         };
 
@@ -98,16 +98,13 @@
         combo_tab_left {
             bindings = <&kp TAB>;
             key-positions = <3 4>;
+            timeout-ms = <30>;
         };
 
         combo_y {
             bindings = <&kp Y>;
             key-positions = <24 25>;
-        };
-
-        combo_v {
-            bindings = <&kp V>;
-            key-positions = <22 23>;
+            timeout-ms = <30>;
         };
 
         combo_num_period {
@@ -228,10 +225,10 @@
         base_layer {
             label = "BASE";
             bindings = <
-               &kp Q        &kp W       &kp E             &kp R          &kp T                 &kp Y      &kp U           &kp I             &kp O       &kp P
-               &cm LCTRL F  &cm LALT A  &cm LGUI D        &cm LSHFT S    &kp G                 &kp H      &cm RSHFT J     &cm RGUI K        &cm RALT L  &cm RCTRL MINUS
-&cm LSHFT ESC  &kp V        &kp X       &kp C             &kp Z          &kp B                 &kp N      &kp M           &kp COMMA         &kp DOT     &kp FSLH         &lp FNC UNDERSCORE
-                                        &lp 2 LANGUAGE_2  &lp SYM SPACE  &cm RGUI BACKSPACE    &kp RSHFT  &lpy NAV ENTER  &lp 4 LANGUAGE_1
+       &kp Q        &kp W       &kp E             &kp R          &kp T                 &kp Y      &kp U           &kp I             &kp O       &kp P
+       &cm LCTRL F  &cm LALT A  &cm LGUI D        &cm LSHFT S    &kp G                 &kp H      &cm RSHFT J     &cm RGUI K        &cm RALT L  &cm RCTRL MINUS
+&kp V  &kp V        &kp X       &kp C             &kp Z          &kp B                 &kp N      &kp M           &kp COMMA         &kp DOT     &kp FSLH         &kp SLASH
+                                &lp 2 LANGUAGE_2  &lp SYM SPACE  &cm RGUI BACKSPACE    &kp RSHFT  &lpy NAV ENTER  &lp 4 LANGUAGE_1
             >;
         };
 
@@ -240,10 +237,10 @@
         nav_layer {
             label = "NAV";
             bindings = <
-       &none         &kp HOME        &kp UP_ARROW    &kp END          &kp LG(T)        &none      &none      &none     &none     &none
-       &kp LA(LEFT)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LA(RIGHT)    &none      &kp RSHFT  &kp RGUI  &kp RALT  &kp RCTRL
-&none  &kp LG(V)     &kp LG(X)       &kp LG(C)       &kp LG(Z)        &none            &kp RG(N)  &none      &none     &none     &none      &none
-                                     &kp LS(TAB)     &kp TAB          &none            &none      &none      &none
+           &none         &kp HOME        &kp UP_ARROW    &kp END          &kp LG(T)        &none      &none      &none     &none     &none
+           &kp LA(LEFT)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LA(RIGHT)    &none      &kp RSHFT  &kp RGUI  &kp RALT  &kp RCTRL
+&kp LG(V)  &kp LG(V)     &kp LG(X)       &kp LG(C)       &kp LG(Z)        &none            &kp RG(N)  &none      &none     &none     &none      &none
+                                         &kp LS(TAB)     &kp TAB          &trans           &none      &none      &none
             >;
         };
 
@@ -266,7 +263,7 @@
             bindings = <
            &kp EXCL      &kp AT    &kp HASH  &kp DLLR   &kp PRCNT    &kp CARET     &kp AMPS   &kp STAR  &kp LBRC   &kp RBRC
            &kp EQUAL     &kp BSLH  &kp PIPE  &kp PLUS   &kp EXCL     &kp QUESTION  &kp SQT    &kp DQT   &kp COLON  &kp SEMI
-&kp GRAVE  &kp UP_ARROW  &kp DOWN  &kp LEFT  &kp RIGHT  &none        &none         &kp LPAR   &kp RPAR  &kp LBKT   &kp RBKT  &kp TILDE
+&kp GRAVE  &kp UP_ARROW  &kp DOWN  &kp LEFT  &kp RIGHT  &none        &kp LPAR      &kp RPAR   &kp LBKT  &kp RBKT   &none     &kp TILDE
                                    &none     &none      &none        &none         &kp RSHFT  &none
             >;
         };

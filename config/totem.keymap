@@ -31,10 +31,9 @@
 #define FNC  4
 
 &mt {
-    quick-tap-ms = <100>;
     global-quick-tap;
     flavor = "tap-preferred";
-    tapping-term-ms = <170>;
+    tapping-term-ms = <50>;
 };
 
 / {
@@ -208,8 +207,8 @@
         compatible = "zmk,behavior-hold-tap";
         label = "CUSTOM_MT";
         flavor = "tap-preferred";
-        tapping-term-ms = <250>;
-        quick-tap-ms = <250>;
+        tapping-term-ms = <200>;
+        quick-tap-ms = <200>;
 
         //global-quick-tap;
 

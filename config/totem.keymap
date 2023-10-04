@@ -90,7 +90,7 @@
 
         combo_tab_left {
             bindings = <&kp TAB>;
-            key-positions = <3 4>;
+            key-positions = <3 2>;
             timeout-ms = <30>;
         };
 
@@ -125,6 +125,13 @@
         combo_en {
             bindings = <&kp LC(SEMICOLON)>;
             key-positions = <16 18>;
+            layers = <0>;
+        };
+
+        combo_bs {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <16 17>;
+            timeout-ms = <50>;
             layers = <0>;
         };
     };
@@ -197,12 +204,12 @@
 
         #binding-cells = <2>;
     };
-    cm: cm {
+    cm_right: cm_right {
         compatible = "zmk,behavior-hold-tap";
-        label = "CUSTOM_MT";
+        label = "CM_RIGHT";
         flavor = "tap-preferred";
-        tapping-term-ms = <250>;
-        quick-tap-ms = <250>;
+        tapping-term-ms = <200>;
+        quick-tap-ms = <200>;
 
         //global-quick-tap;
 
@@ -211,10 +218,11 @@
             <&kp>;
 
         #binding-cells = <2>;
+        hold-trigger-key-positions = <25 0 10 11 12 13 20 21 22 23 24 32 0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 25 32 33 34>;
     };
-    test: test {
+    cm_left: cm_left {
         compatible = "zmk,behavior-hold-tap";
-        label = "TEST";
+        label = "CM_LEFT";
         bindings =
             <&kp>,
             <&kp>;
@@ -223,7 +231,7 @@
         tapping-term-ms = <200>;
         quick-tap-ms = <200>;
         flavor = "tap-preferred";
-        hold-trigger-key-positions = <0 11 2 3 0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 25 32 33 25 33 34>;
+        hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 26 27 28 29 30 31 35 36 37>;
     };
 
     behaviors {
@@ -237,10 +245,10 @@
         base_layer {
             label = "BASE";
             bindings = <
-       &kp Q        &kp W       &kp E             &kp R          &kp T                 &kp Y          &kp U           &test RGUI I      &kp O       &kp P
-       &cm LCTRL F  &cm LALT A  &cm LGUI D        &cm LSHFT S    &cm LCTRL G           &cm RCTRL H    &cm RSHFT J     &cm RGUI K        &cm RALT L  &cm RCTRL MINUS
-&kp V  &kp LSHFT    &kp X       &kp C             &kp Z          &kp B                 &kp N          &kp M           &kp COMMA         &kp DOT     &kp RSHFT        &kp SLASH
-                                &lp 2 LANGUAGE_2  &lp SYM SPACE  &cm RGUI BACKSPACE    &cm RSHFT ESC  &lpy NAV ENTER  &lp 4 LANGUAGE_1
+       &kp Q      &kp W  &kp E             &kp R            &kp T                      &kp Y                &kp U              &kp I             &kp O    &kp P
+       &kp F      &kp A  &cm_left LGUI D   &cm_left LGUI S  &cm_left LCTRL G           &cm_right RCTRL H    &cm_right RSHFT J  &cm_right RGUI K  &kp L    &kp MINUS
+&kp V  &kp LSHFT  &kp X  &kp C             &kp Z            &kp B                      &kp N                &kp M              &kp COMMA         &kp DOT  &kp RSHFT  &kp SLASH
+                         &lp 2 LANGUAGE_2  &lp SYM SPACE    &cm_left LGUI BACKSPACE    &cm_right RSHFT ESC  &lpy NAV ENTER     &lp 4 LANGUAGE_1
             >;
         };
 

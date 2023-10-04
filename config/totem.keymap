@@ -237,7 +237,7 @@
         base_layer {
             label = "BASE";
             bindings = <
-       &kp Q        &kp W       &kp E             &kp R          &kp T                 &kp Y          &kp U           &kp I             &kp O       &kp P
+       &kp Q        &kp W       &kp E             &kp R          &kp T                 &kp Y          &kp U           &test RGUI I      &kp O       &kp P
        &cm LCTRL F  &cm LALT A  &cm LGUI D        &cm LSHFT S    &cm LCTRL G           &cm RCTRL H    &cm RSHFT J     &cm RGUI K        &cm RALT L  &cm RCTRL MINUS
 &kp V  &kp LSHFT    &kp X       &kp C             &kp Z          &kp B                 &kp N          &kp M           &kp COMMA         &kp DOT     &kp RSHFT        &kp SLASH
                                 &lp 2 LANGUAGE_2  &lp SYM SPACE  &cm RGUI BACKSPACE    &cm RSHFT ESC  &lpy NAV ENTER  &lp 4 LANGUAGE_1

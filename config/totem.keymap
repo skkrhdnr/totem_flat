@@ -352,6 +352,18 @@
         };
 
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+
+        inp_layer {
+            label = "INP";
+            bindings = <
+       &none            &kp W  &kp E             &kp R             &none                      &none                &kp U              &kp I             &kp O    &none
+       &kp RSHFT  &kp A  &kp D   &kp S  &none           &none    &kp J  &kp K  &kp L    &kp LSHFT
+&noen  &none            &kp X  &kp C             &kp Z             &none                      &none                &kp M              &kp COMMA         &kp DOT  &none             &none
+                               &lp 2 LANGUAGE_2  &lp SYM SPACE     &cm_left LGUI BACKSPACE    &cm_right RSHFT ESC  &lpy NAV ENTER     &lp 4 LANGUAGE_1
+            >;
+        };
+
+/
         //nav_layer { label = "template"; bindings = <
         //          &none          &none          &none          &none          &none          &none          &none          &none          &none          &none
         //          &none          &none          &none          &none          &none          &none          &none          &none          &none          &none          

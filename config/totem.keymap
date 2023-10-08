@@ -30,7 +30,8 @@
 #define SYM  3
 #define FNC  4
 #define INP  5
-#define COMBO_MS 30
+#define COMBO_MS  30
+#define COMBO3_MS 50
 
 / {
     combos {
@@ -46,14 +47,14 @@
         combo_macro_arigatou {
             bindings = <&arigatou>;
             key-positions = <3 11 7>;
-            timeout-ms = <COMBO_MS>;
+            timeout-ms = <COMBO3_MS>;
             layers = <0>;
         };
 
         combo_macro_yoroshiku {
             bindings = <&yorosihku>;
             key-positions = <3 5 8>;
-            timeout-ms = <COMBO_MS>;
+            timeout-ms = <COMBO3_MS>;
             layers = <0>;
         };
 
@@ -189,14 +190,14 @@
         combo_en {
             bindings = <&kp LANGUAGE_2>;
             key-positions = <11 12 13>;
-            timeout-ms = <COMBO_MS>;
+            timeout-ms = <COMBO3_MS>;
             layers = <0 5>;
         };
 
         combo_jp {
             bindings = <&kp LANGUAGE_1>;
             key-positions = <16 17 18>;
-            timeout-ms = <COMBO_MS>;
+            timeout-ms = <COMBO3_MS>;
             layers = <0 5>;
         };
     };

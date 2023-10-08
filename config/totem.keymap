@@ -140,9 +140,9 @@
         };
 
         combo_layer_inp {
-            bindings = <&tog 5>;
+            bindings = <&to 5>;
             key-positions = <33 36>;
-            layers = <0 5>;
+            layers = <0>;
         };
 
         combo_t {
@@ -199,6 +199,12 @@
             key-positions = <16 17 18>;
             timeout-ms = <COMBO3_MS>;
             layers = <0 5>;
+        };
+
+        combo_layer_base {
+            bindings = <&to 0>;
+            key-positions = <33 36>;
+            layers = <5>;
         };
     };
 

@@ -381,20 +381,5 @@
 
     conditional_layers {
         compatible = "zmk,conditional-layers";
-
-        inp_nav {
-            if-layers = <5>;
-            then-layer = <1>;
-        };
-
-        inp_num {
-            if-layers = <5>;
-            then-layer = <2>;
-        };
-
-        inp_sym {
-            if-layers = <5>;
-            then-layer = <3>;
-        };
     };
 };

@@ -40,7 +40,7 @@
             timeout-ms = <COMBO_MS>;
             key-positions = <33 12>;
             bindings = <&kp ESC>;
-            layers = <0>;
+            layers = <0 5>;
         };
 
         combo_macro_arigatou {

@@ -140,9 +140,8 @@
         };
 
         combo_layer_inp {
-            bindings = <&sl 5>;
+            bindings = <&tog 5>;
             key-positions = <33 36>;
-            layers = <0>;
         };
 
         combo_t {
@@ -203,7 +202,7 @@
 
         combo_layer_base {
             bindings = <&sl 0>;
-            key-positions = <33 36>;
+            key-positions = <33 36 2 7>;
             layers = <5>;
         };
     };

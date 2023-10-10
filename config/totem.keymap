@@ -283,7 +283,7 @@
         bindings = <&kp>, <&kp>;
 
         #binding-cells = <2>;
-        hold-trigger-key-positions = <25 0 10 11 12 13 20 21 22 23 24 32 0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 25 32 33 34>;
+        hold-trigger-key-positions = <25 0 10 11 12 13 20 21 22 23 24 32 0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 25 32 33 34 35>;
     };
     cm_left: cm_left {
         compatible = "zmk,behavior-hold-tap";
@@ -308,10 +308,10 @@
         base_layer {
             label = "BASE";
             bindings = <
-       &kp Q            &kp W  &kp E             &kp R             &kp T                      &kp Y                &kp U              &kp I             &kp O    &kp P
-       &cm_left LALT F  &kp A  &cm_left LGUI D   &cm_left LSHFT S  &cm_left LCTRL G           &cm_right RCTRL H    &cm_right RSHFT J  &cm_right RGUI K  &kp L    &cm_right RALT MINUS
-&kp V  &kp V            &kp X  &kp C             &kp Z             &kp B                      &kp N                &kp M              &kp COMMA         &kp DOT  &kp SLASH             &kp SLASH
-                               &lp 2 LANGUAGE_2  &lp SYM SPACE     &cm_left LGUI BACKSPACE    &cm_right RSHFT ESC  &lpy NAV ENTER     &lp 4 LANGUAGE_1
+       &kp Q  &kp W            &kp E             &kp R             &kp T                      &kp Y              &kp U              &kp I             &kp O             &kp P
+       &kp F  &cm_left LALT A  &cm_left LGUI D   &cm_left LSHFT S  &cm_left LCTRL G           &cm_right RCTRL H  &cm_right RSHFT J  &cm_right RGUI K  &cm_right RALT L  &kp MINUS
+&kp V  &kp V  &kp X            &kp C             &kp Z             &kp B                      &kp N              &kp M              &kp COMMA         &kp DOT           &kp SLASH  &kp SLASH
+                               &lp 2 LANGUAGE_2  &lp SYM SPACE     &cm_left LGUI BACKSPACE    &kp RSHFT          &lpy NAV ENTER     &lp 4 LANGUAGE_1
             >;
         };
 
@@ -320,10 +320,10 @@
         nav_layer {
             label = "NAV";
             bindings = <
-           &none         &kp HOME        &kp UP_ARROW    &kp END          &kp LG(T)        &none      &none      &none     &none     &none
-           &kp LA(LEFT)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LA(RIGHT)    &none      &kp RSHFT  &kp RGUI  &kp RALT  &kp RCTRL
-&kp LG(V)  &kp LG(V)     &kp LG(X)       &kp LG(C)       &kp LG(Z)        &none            &kp RG(N)  &none      &none     &none     &none      &none
-                                         &none           &lp 2 SPACE      &kp BACKSPACE    &none      &none      &none
+           &none         &kp HOME        &kp UP_ARROW    &kp END          &kp LG(T)        &none      &none      &none     &kp RG(O)  &none
+           &kp LA(LEFT)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LA(RIGHT)    &kp RCTRL  &kp RSHFT  &kp RGUI  &kp RALT   &kp RCTRL
+&kp LG(V)  &kp LG(V)     &kp LG(X)       &kp LG(C)       &kp LG(Z)        &kp LG(B)        &kp RG(N)  &none      &none     &none      &none      &none
+                                         &none           &kp SPACE        &kp BACKSPACE    &none      &none      &none
             >;
         };
 
@@ -347,7 +347,7 @@
            &kp EXCL      &kp AT    &kp HASH  &kp DLLR   &kp PRCNT    &kp CARET     &kp AMPS   &kp STAR  &kp LBRC   &kp RBRC
            &kp EQUAL     &kp BSLH  &kp PIPE  &kp PLUS   &kp EXCL     &kp QUESTION  &kp SQT    &kp DQT   &kp COLON  &kp SEMI
 &kp GRAVE  &kp UP_ARROW  &kp DOWN  &kp LEFT  &kp RIGHT  &none        &none         &kp LPAR   &kp RPAR  &kp LBKT   &kp RBKT  &kp TILDE
-                                   &none     &none      &none        &none         &kp RSHFT  &none
+                                   &none     &none      &none        &none         &kp ENTER  &none
             >;
         };
 
@@ -356,10 +356,10 @@
         fnc_layer {
             label = "FNC";
             bindings = <
-       &none        &kp RC(RS(TAB))   &kp RG(RA(UP))    &kp RC(TAB)        &none          &bt BT_CLR  &bt_0          &bt_1          &bt_2  &none
-       &kp RA(TAB)  &kp RG(RA(LEFT))  &kp RG(RA(DOWN))  &kp RG(RA(RIGHT))  &kp RG(TAB)    &kp K_MUTE  &kp C_VOL_DN   &kp C_VOL_UP   &none  &none
-&none  &none        &kp RA(UP)        &kp RG(RA(N))     &kp RA(DOWN)       &none          &none       &kp C_BRI_DEC  &kp C_BRI_INC  &none  &none  &kp C_POWER
-                                      &none             &none              &none          &none       &none          &none
+       &none        &kp RC(RS(TAB))   &kp RG(RA(UP))    &kp RC(TAB)        &none            &bt BT_CLR  &bt_0          &bt_1          &bt_2  &none
+       &kp RA(TAB)  &kp RG(RA(LEFT))  &kp RG(RA(DOWN))  &kp RG(RA(RIGHT))  &kp RG(TAB)      &kp K_MUTE  &kp C_VOL_DN   &kp C_VOL_UP   &none  &none
+&none  &none        &kp RA(UP)        &kp RG(RA(N))     &kp RA(DOWN)       &none            &none       &kp C_BRI_DEC  &kp C_BRI_INC  &none  &none  &kp C_POWER
+                                      &kp LG(N0)        &kp LG(PLUS)       &kp LG(MINUS)    &none       &none          &none
             >;
         };
 
@@ -368,10 +368,10 @@
         inp_layer {
             label = "INP";
             bindings = <
-       &none      &kp W  &kp E  &kp R        &none    &none  &kp U        &kp I      &kp O    &none
-       &kp RSHFT  &kp A  &kp D  &kp S        &none    &none  &kp J        &kp K      &kp L    &kp LSHFT
-&none  &none      &kp X  &kp C  &kp Z        &none    &none  &kp M        &kp COMMA  &kp DOT  &none      &none
-                         &none  &lt 3 SPACE  &none    &none  &lt 1 ENTER  &none
+       &none      &kp W  &kp E  &kp R      &none    &none  &kp U      &kp I      &kp O    &none
+       &kp RSHFT  &kp A  &kp D  &kp S      &none    &none  &kp J      &kp K      &kp L    &kp LSHFT
+&none  &none      &kp X  &kp C  &kp Z      &none    &none  &kp M      &kp COMMA  &kp DOT  &none      &none
+                         &none  &kp SPACE  &none    &none  &kp ENTER  &none
             >;
         };
 

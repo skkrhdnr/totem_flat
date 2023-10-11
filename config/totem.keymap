@@ -362,9 +362,9 @@
         inp_layer {
             label = "INP";
             bindings = <
-          &kp Q  &kp L  &kp U  &kp COMMA  &kp PERIOD       &kp F  &kp W      &kp R  &kp Y  &kp P
-          &kp E  &kp I  &kp A  &kp O      &kp MINUS        &kp K  &kp T      &kp N  &kp S  &kp H
-&kp FSLH  &kp V  &kp X  &kp C  &kp Z      &none            &kp G  &kp D      &kp M  &kp J  &kp B  &kp MINUS
+          &kp Q  &kp L  &kp E  &kp COMMA  &kp PERIOD       &kp F  &kp W      &kp R  &kp Y  &kp P
+          &kp E  &kp I  &kp A  &kp U      &kp O            &kp K  &kp T      &kp N  &kp S  &kp H
+&kp FSLH  &kp V  &kp X  &kp C  &kp Z      &kp MINUS        &kp G  &kp D      &kp M  &kp J  &kp B  &kp MINUS
                         &none  &kp SPACE  &kp BACKSPACE    &none  &kp ENTER  &none
             >;
         };

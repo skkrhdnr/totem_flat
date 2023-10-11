@@ -350,9 +350,9 @@
         fnc_layer {
             label = "FNC";
             bindings = <
-       &none        &kp RC(RS(TAB))   &kp RG(RA(UP))    &kp RC(TAB)        &none            &bt BT_CLR  &bt_0          &bt_1          &bt_2  &none
+       &none        &kp RC(RS(TAB))   &kp RG(RA(UP))    &kp RC(TAB)        &none            &bt BT_CLR  &bt_0          &bt_1          &bt_2  &out OUT_TOG
        &kp RA(TAB)  &kp RG(RA(LEFT))  &kp RG(RA(DOWN))  &kp RG(RA(RIGHT))  &kp RG(TAB)      &kp K_MUTE  &kp C_VOL_DN   &kp C_VOL_UP   &none  &none
-&none  &none        &kp RA(UP)        &kp RG(RA(N))     &kp RA(DOWN)       &none            &none       &kp C_BRI_DEC  &kp C_BRI_INC  &none  &none  &kp C_POWER
+&none  &none        &kp RA(UP)        &kp RG(RA(N))     &kp RA(DOWN)       &none            &none       &kp C_BRI_DEC  &kp C_BRI_INC  &none  &none         &kp C_POWER
                                       &kp LG(N0)        &kp LG(PLUS)       &kp LG(MINUS)    &none       &none          &none
             >;
         };

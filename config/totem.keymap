@@ -326,10 +326,10 @@
         num_layer {
             label = "NUM";
             bindings = <
-       &none  &kp F7  &kp F8  &kp F9  &kp F12    &none     &kp N7  &kp N8  &kp N9  &none
-       &none  &kp F4  &kp F5  &kp F6  &kp F11    &kp PLUS  &kp N4  &kp N5  &kp N6  &kp MINUS
-&none  &none  &kp F1  &kp F2  &kp F3  &kp F10    &kp STAR  &kp N1  &kp N2  &kp N3  &kp FSLH   &kp FSLH
-                      &none   &none   &none      &none     &kp N0  &kp N0
+            &bt_0  &kp F7  &kp F8  &kp F9  &kp F12    &none     &kp N7  &kp N8  &kp N9  &none
+            &bt_1  &kp F4  &kp F5  &kp F6  &kp F11    &kp PLUS  &kp N4  &kp N5  &kp N6  &kp MINUS
+&bt BT_CLR  &bt_2  &kp F1  &kp F2  &kp F3  &kp F10    &kp STAR  &kp N1  &kp N2  &kp N3  &kp FSLH   &kp FSLH
+                           &none   &none   &none      &none     &kp N0  &kp N0
             >;
         };
 
@@ -350,9 +350,9 @@
         fnc_layer {
             label = "FNC";
             bindings = <
-       &none        &kp RC(RS(TAB))   &kp RG(RA(UP))    &kp RC(TAB)        &none            &bt BT_CLR  &bt_0          &bt_1          &bt_2  &out OUT_TOG
+       &none        &kp RC(RS(TAB))   &kp RG(RA(UP))    &kp RC(TAB)        &none            &none       &none          &none          &none  &none
        &kp RA(TAB)  &kp RG(RA(LEFT))  &kp RG(RA(DOWN))  &kp RG(RA(RIGHT))  &kp RG(TAB)      &kp K_MUTE  &kp C_VOL_DN   &kp C_VOL_UP   &none  &none
-&none  &none        &kp RA(UP)        &kp RG(RA(N))     &kp RA(DOWN)       &none            &none       &kp C_BRI_DEC  &kp C_BRI_INC  &none  &none         &kp C_POWER
+&none  &none        &kp RA(UP)        &kp RG(RA(N))     &kp RA(DOWN)       &none            &none       &kp C_BRI_DEC  &kp C_BRI_INC  &none  &none  &kp C_POWER
                                       &kp LG(N0)        &kp LG(PLUS)       &kp LG(MINUS)    &none       &none          &none
             >;
         };
@@ -362,10 +362,10 @@
         inp_layer {
             label = "INP";
             bindings = <
-          &kp Q  &kp L  &kp E  &kp COMMA  &kp PERIOD       &kp F  &kp W      &kp R  &kp Y  &kp P
-          &kp E  &kp I  &kp A  &kp U      &kp O            &kp K  &kp T      &kp N  &kp S  &kp H
-&kp FSLH  &kp V  &kp X  &kp C  &kp Z      &kp MINUS        &kp G  &kp D      &kp M  &kp J  &kp B  &kp MINUS
-                        &none  &kp SPACE  &kp BACKSPACE    &none  &kp ENTER  &none
+          &kp Q  &kp L  &kp E  &kp O      &kp COMMA        &kp PERIOD  &kp W      &kp R  &kp Y  &kp P
+          &kp F  &kp I  &kp A  &kp U      &kp Z            &kp K       &kp T      &kp N  &kp S  &kp H
+&kp FSLH  &kp V  &kp X  &kp C  &kp Z      &kp MINUS        &kp G       &kp D      &kp M  &kp J  &kp B  &kp MINUS
+                        &none  &kp SPACE  &kp BACKSPACE    &none       &kp ENTER  &none
             >;
         };
 

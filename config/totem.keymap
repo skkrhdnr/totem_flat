@@ -97,93 +97,21 @@
             layers = <0 5>;
         };
 
-        combo_q {
-            bindings = <&kp Q>;
-            key-positions = <1 2 31>;
-            timeout-ms = <COMBO_MS>;
-            layers = <5>;
-        };
-
-        combo_f {
-            bindings = <&kp F>;
-            key-positions = <11 12 31>;
-            timeout-ms = <COMBO_MS>;
-            layers = <5>;
-        };
-
-        combo_v {
-            bindings = <&kp V>;
-            key-positions = <22 23 31>;
-            timeout-ms = <COMBO_MS>;
-            layers = <5>;
-        };
-
-        combo_p {
-            bindings = <&kp P>;
-            key-positions = <7 8 31>;
-            layers = <5>;
-            timeout-ms = <COMBO_MS>;
-        };
-
-        combo_- {
-            bindings = <&kp MINUS>;
-            key-positions = <17 18 31>;
-            timeout-ms = <COMBO_MS>;
-            layers = <5>;
-        };
-
-        combo_slash {
-            bindings = <&kp SLASH>;
-            key-positions = <28 29 31>;
-            timeout-ms = <COMBO_MS>;
-            layers = <5>;
-        };
-
         combo_layer_inp {
             bindings = <&tog 5>;
             key-positions = <33 36>;
         };
 
-        combo_t {
-            bindings = <&kp T>;
-            key-positions = <2 3 31>;
+        combo_question {
+            bindings = <&kp QUESTION>;
+            key-positions = <29 28>;
             timeout-ms = <COMBO_MS>;
-            layers = <5>;
         };
 
-        combo_g {
-            bindings = <&kp G>;
-            key-positions = <12 13 31>;
+        combo_excl {
+            bindings = <&kp EXCL>;
+            key-positions = <27 28>;
             timeout-ms = <COMBO_MS>;
-            layers = <5>;
-        };
-
-        combo_b {
-            bindings = <&kp B>;
-            key-positions = <23 24 31>;
-            timeout-ms = <COMBO_MS>;
-            layers = <5>;
-        };
-
-        combo_y {
-            bindings = <&kp Y>;
-            key-positions = <7 6 31>;
-            timeout-ms = <COMBO_MS>;
-            layers = <5>;
-        };
-
-        combo_h {
-            bindings = <&kp H>;
-            key-positions = <16 17 31>;
-            timeout-ms = <COMBO_MS>;
-            layers = <5>;
-        };
-
-        combo_n {
-            bindings = <&kp N>;
-            key-positions = <27 28 31>;
-            timeout-ms = <COMBO_MS>;
-            layers = <5>;
         };
 
         combo_en {
@@ -339,7 +267,7 @@
             label = "SYM";
             bindings = <
            &kp EXCL      &kp AT    &kp HASH  &kp DLLR   &kp PRCNT    &kp CARET     &kp AMPS   &kp STAR  &kp LBRC   &kp RBRC
-           &kp EQUAL     &kp BSLH  &kp PIPE  &kp PLUS   &kp EXCL     &kp QUESTION  &kp SQT    &kp DQT   &kp COLON  &kp SEMI
+           &kp QUESTION  &kp BSLH  &kp PIPE  &kp PLUS   &kp EQUAL    &kp QUESTION  &kp SQT    &kp DQT   &kp COLON  &kp SEMI
 &kp GRAVE  &kp UP_ARROW  &kp DOWN  &kp LEFT  &kp RIGHT  &none        &none         &kp LPAR   &kp RPAR  &kp LBKT   &kp RBKT  &kp TILDE
                                    &none     &none      &none        &none         &kp ENTER  &none
             >;

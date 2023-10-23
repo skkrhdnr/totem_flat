@@ -39,9 +39,9 @@
 
         combo_esc {
             timeout-ms = <COMBO_MS>;
-            key-positions = <11 12>;
+            key-positions = <14 13>;
             bindings = <&kp ESC>;
-            layers = <0 5>;
+            layers = <0 1>;
         };
 
         combo_macro_arigatou {
@@ -58,11 +58,11 @@
             layers = <0>;
         };
 
-        combo_tab_left {
+        combo_tab {
             bindings = <&kp TAB>;
             key-positions = <12 13>;
             timeout-ms = <COMBO_MS>;
-            layers = <0 5>;
+            layers = <0 1>;
         };
 
         combo_graphic_y {
@@ -80,25 +80,25 @@
         combo_ctrl_en {
             bindings = <&kp LC(SEMICOLON)>;
             key-positions = <16 18>;
-            layers = <0 5>;
+            layers = <0 1>;
         };
 
         combo_bs {
             bindings = <&kp BACKSPACE>;
             key-positions = <16 17>;
             timeout-ms = <COMBO_MS>;
-            layers = <0 5>;
+            layers = <0 1>;
         };
 
         combo_caps {
             bindings = <&caps_word>;
             key-positions = <13 16>;
             timeout-ms = <COMBO_MS>;
-            layers = <0 5>;
+            layers = <0 1>;
         };
 
         combo_layer_inp {
-            bindings = <&tog 5>;
+            bindings = <&tog 1>;
             key-positions = <33 36>;
         };
 
@@ -114,18 +114,23 @@
             timeout-ms = <COMBO_MS>;
         };
 
-        combo_en {
-            bindings = <&kp LANGUAGE_2>;
-            key-positions = <2 3>;
+        combo_cmd_bs {
+            bindings = <&kp LG(BACKSPACE)>;
+            key-positions = <15 16>;
             timeout-ms = <COMBO_MS>;
-            layers = <0 5>;
+            layers = <0 1>;
         };
 
-        combo_jp {
-            bindings = <&kp LANGUAGE_1>;
-            key-positions = <6 7>;
-            timeout-ms = <COMBO_MS>;
-            layers = <0 5>;
+        combo_opt_bs {
+            bindings = <&kp LA(BACKSPACE)>;
+            key-positions = <17 18>;
+            layers = <0 1>;
+        };
+
+        combo_shift_tab {
+            bindings = <&kp LS(TAB)>;
+            key-positions = <11 12>;
+            layers = <0 1>;
         };
     };
 
@@ -233,11 +238,19 @@
        &kp Q  &kp W            &kp E             &kp R             &kp T                      &kp Y              &kp U              &kp I             &kp O             &kp P
        &kp F  &cm_left LALT A  &cm_left LGUI D   &cm_left LSHFT S  &cm_left LCTRL G           &cm_right RCTRL H  &cm_right RSHFT J  &cm_right RGUI K  &cm_right RALT L  &kp MINUS
 &kp V  &kp V  &kp X            &kp C             &kp Z             &kp B                      &kp N              &kp M              &kp COMMA         &kp DOT           &kp SLASH  &kp SLASH
-                               &lp 2 LANGUAGE_2  &lp SYM SPACE     &cm_left LGUI BACKSPACE    &kp RSHFT          &lpy NAV ENTER     &lp 4 LANGUAGE_1
+                               &lp 3 LANGUAGE_2  &lp 4 SPACE       &cm_left LGUI BACKSPACE    &kp RSHFT          &lpy 2 ENTER       &lp 5 LANGUAGE_1
             >;
         };
 
-        // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+        inp_layer {
+            label = "INP";
+            bindings = <
+          &kp Q  &kp L  &kp E  &kp O        &kp COMMA        &kp PERIOD  &kp W         &kp R  &kp Y  &kp P
+          &kp F  &kp I  &kp A  &kp U        &kp Z            &kp K       &kp T         &kp N  &kp S  &kp H
+&kp FSLH  &kp V  &kp X  &kp C  &kp Z        &kp MINUS        &kp G       &kp D         &kp M  &kp J  &kp B  &kp MINUS
+                        &none  &lp 4 SPACE  &kp BACKSPACE    &none       &lpy 2 ENTER  &none
+            >;
+        };
 
         nav_layer {
             label = "NAV";
@@ -249,8 +262,6 @@
             >;
         };
 
-        // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-
         num_layer {
             label = "NUM";
             bindings = <
@@ -261,19 +272,15 @@
             >;
         };
 
-        // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-
         sym_layer {
             label = "SYM";
             bindings = <
-           &kp EXCL      &kp AT    &kp HASH  &kp DLLR   &kp PRCNT    &kp CARET     &kp AMPS   &kp STAR  &kp LBRC   &kp RBRC
-           &kp QUESTION  &kp BSLH  &kp PIPE  &kp PLUS   &kp EQUAL    &kp QUESTION  &kp SQT    &kp DQT   &kp COLON  &kp SEMI
-&kp GRAVE  &kp UP_ARROW  &kp DOWN  &kp LEFT  &kp RIGHT  &none        &none         &kp LPAR   &kp RPAR  &kp LBKT   &kp RBKT  &kp TILDE
-                                   &none     &none      &none        &none         &kp ENTER  &none
+           &kp EXCL      &kp AT    &kp HASH  &kp DLLR   &kp PRCNT    &kp CARET  &kp AMPS   &kp STAR  &kp LBRC   &kp RBRC
+           &kp QUESTION  &kp BSLH  &kp PIPE  &kp EQUAL  &kp PLUS     &kp GRAVE  &kp SQT    &kp DQT   &kp COLON  &kp SEMI
+&kp GRAVE  &kp UP_ARROW  &kp DOWN  &kp LEFT  &kp RIGHT  &none        &none      &kp LPAR   &kp RPAR  &kp LBKT   &kp RBKT  &kp TILDE
+                                   &none     &none      &none        &none      &kp ENTER  &none
             >;
         };
-
-        // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
         fnc_layer {
             label = "FNC";
@@ -282,18 +289,6 @@
        &kp RA(TAB)  &kp RG(RA(LEFT))  &kp RG(RA(DOWN))  &kp RG(RA(RIGHT))  &kp RG(TAB)      &kp K_MUTE  &kp C_VOL_DN   &kp C_VOL_UP   &none  &none
 &none  &none        &kp RA(UP)        &kp RG(RA(N))     &kp RA(DOWN)       &none            &none       &kp C_BRI_DEC  &kp C_BRI_INC  &none  &none  &kp C_POWER
                                       &kp LG(N0)        &kp LG(PLUS)       &kp LG(MINUS)    &none       &none          &none
-            >;
-        };
-
-        // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-
-        inp_layer {
-            label = "INP";
-            bindings = <
-          &kp Q  &kp L  &kp E  &kp O      &kp COMMA        &kp PERIOD  &kp W      &kp R  &kp Y  &kp P
-          &kp F  &kp I  &kp A  &kp U      &kp Z            &kp K       &kp T      &kp N  &kp S  &kp H
-&kp FSLH  &kp V  &kp X  &kp C  &kp Z      &kp MINUS        &kp G       &kp D      &kp M  &kp J  &kp B  &kp MINUS
-                        &none  &kp SPACE  &kp BACKSPACE    &none       &kp ENTER  &none
             >;
         };
 

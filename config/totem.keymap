@@ -245,10 +245,10 @@
         base_layer {
             label = "BASE";
             bindings = <
-           &kp Q             &kp W            &kp E            &kp R             &kp T                      &kp Y              &kp U              &kp I             &kp O             &kp P
-           &cm_left LCTRL A  &cm_left LALT S  &cm_left LGUI D  &cm_left LSHFT F  &cm_left LCTRL G           &cm_right RCTRL H  &cm_right RSHFT J  &cm_right RGUI K  &cm_right RALT L  &cm_right RCTRL MINUS
-&kp GLOBE  &kp Z             &kp X            &kp C            &kp V             &kp B                      &kp N              &kp M              &kp COMMA         &kp DOT           &kp SLASH              &kp SLASH
-                                              &lp 3 ESC        &lp 4 SPACE       &cm_left LGUI BACKSPACE    &lp 5 BACKSPACE    &lpy 2 ENTER       &lp 5 LANGUAGE_1
+           &kp Q             &kp W            &kp E            &kp R             &kp T                  &kp Y                 &kp U              &kp I             &kp O             &kp P
+           &cm_left LCTRL A  &cm_left LALT S  &cm_left LGUI D  &cm_left LSHFT F  &cm_left LS(LGUI) G    &cm_right RS(RGUI) H  &cm_right RSHFT J  &cm_right RGUI K  &cm_right RALT L  &cm_right RCTRL MINUS
+&kp GLOBE  &kp Z             &kp X            &kp C            &kp V             &kp B                  &kp N                 &kp M              &kp COMMA         &kp DOT           &kp SLASH              &kp SLASH
+                                              &lp 3 ESC        &lp 4 SPACE       &kp RGUI               &lp 5 BACKSPACE       &lpy 2 ENTER       &lp 5 LANGUAGE_1
             >;
         };
 
@@ -275,10 +275,10 @@
         num_layer {
             label = "NUM";
             bindings = <
-            &bt_0  &kp F7  &kp F8  &kp F9        &kp F12         &none     &kp N7  &kp N8  &kp N9  &none
-            &bt_1  &kp F4  &kp F5  &kp F6        &kp F11         &kp PLUS  &kp N4  &kp N5  &kp N6  &kp MINUS
-&bt BT_CLR  &bt_2  &kp F1  &kp F2  &kp F3        &kp F10         &kp STAR  &kp N1  &kp N2  &kp N3  &kp FSLH   &kp FSLH
-                           &none   &out OUT_USB  &out OUT_BLE    &none     &kp N0  &kp N0
+            &bt_0  &kp F7  &kp F8  &kp F9  &kp F12         &none      &kp N7  &kp N8  &kp N9  &none
+            &bt_1  &kp F4  &kp F5  &kp F6  &kp F11         &kp PLUS   &kp N4  &kp N5  &kp N6  &kp MINUS
+&bt BT_CLR  &bt_2  &kp F1  &kp F2  &kp F3  &kp F10         &kp STAR   &kp N1  &kp N2  &kp N3  &kp FSLH   &kp FSLH
+                           &none   &none   &out OUT_BLE    &kp LANG2  &kp N0  &kp N0
             >;
         };
 

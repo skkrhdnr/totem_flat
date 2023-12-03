@@ -97,12 +97,6 @@
             layers = <0 1>;
         };
 
-        combo_opt_bs {
-            bindings = <&kp LA(BACKSPACE)>;
-            key-positions = <17 18>;
-            layers = <0 1>;
-        };
-
         combo_shita_line {
             bindings = <&shita_line>;
             key-positions = <16 36>;
@@ -112,6 +106,21 @@
         combo_q {
             bindings = <&kp Q>;
             key-positions = <11 12>;
+        };
+
+        combo_b {
+            bindings = <&kp B>;
+            key-positions = <23 24>;
+        };
+
+        combo_n {
+            bindings = <&kp N>;
+            key-positions = <27 28>;
+        };
+
+        combo_p {
+            bindings = <&kp P>;
+            key-positions = <17 18>;
         };
     };
 

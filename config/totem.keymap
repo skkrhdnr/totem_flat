@@ -58,12 +58,6 @@
             layers = <0 1>;
         };
 
-        combo_t {
-            bindings = <&kp T>;
-            key-positions = <13 14 12 11>;
-            timeout-ms = <COMBO_MS>;
-        };
-
         combo_left_enter {
             bindings = <&kp ENTER>;
             key-positions = <33 13>;
@@ -85,14 +79,7 @@
 
         combo_caps {
             bindings = <&caps_word>;
-            key-positions = <13 16>;
-            timeout-ms = <COMBO_MS>;
-            layers = <0 1>;
-        };
-
-        combo_y {
-            bindings = <&kp Y>;
-            key-positions = <15 16 17 18>;
+            key-positions = <33 36>;
             timeout-ms = <COMBO_MS>;
             layers = <0 1>;
         };
@@ -106,16 +93,6 @@
         combo_q {
             bindings = <&kp Q>;
             key-positions = <11 12>;
-        };
-
-        combo_b {
-            bindings = <&kp B>;
-            key-positions = <23 24>;
-        };
-
-        combo_n {
-            bindings = <&kp N>;
-            key-positions = <27 28>;
         };
 
         combo_p {

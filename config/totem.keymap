@@ -55,7 +55,7 @@
             bindings = <&kp TAB>;
             key-positions = <12 13>;
             timeout-ms = <COMBO_MS>;
-            layers = <0 1>;
+            layers = <0>;
         };
 
         combo_left_enter {
@@ -67,21 +67,21 @@
         combo_ctrl_en {
             bindings = <&kp LC(SEMICOLON)>;
             key-positions = <16 18>;
-            layers = <0 1>;
+            layers = <0>;
         };
 
         combo_bs {
             bindings = <&kp BACKSPACE>;
             key-positions = <16 17>;
             timeout-ms = <COMBO_MS>;
-            layers = <0 1>;
+            layers = <0>;
         };
 
         combo_caps {
             bindings = <&caps_word>;
             key-positions = <33 36>;
             timeout-ms = <COMBO_MS>;
-            layers = <0 1>;
+            layers = <0>;
         };
 
         combo_shita_line {
@@ -225,17 +225,7 @@
                       &kp Q             &kp W            &kp E             &kp R             &kp T                  &kp Y                 &kp U              &kp I             &kp O             &kp P
                       &cm_left LCTRL A  &cm_left LALT S  &cm_left LGUI D   &cm_left LSHFT F  &cm_left LS(LGUI) G    &cm_right RS(RGUI) H  &cm_right RSHFT J  &cm_right RGUI K  &cm_right RALT L  &cm_right RCTRL MINUS
 &cm_left LCMD ESCAPE  &kp Z             &kp X            &kp C             &kp V             &kp B                  &kp N                 &kp M              &kp COMMA         &kp DOT           &kp SLASH              &kp UNDERSCORE
-                                                         &lp 3 LANGUAGE_2  &lp 4 SPACE       &lp 3 TAB              &lp 5 BACKSPACE       &lpy 2 ENTER       &lp 5 LANGUAGE_1
-            >;
-        };
-
-        inp_layer {
-            label = "INP";
-            bindings = <
-          &kp Q  &kp L  &kp E  &kp O        &kp COMMA        &kp PERIOD  &kp W         &kp R  &kp Y  &kp P
-          &kp F  &kp I  &kp A  &kp U        &kp Z            &kp K       &kp T         &kp N  &kp S  &kp H
-&kp FSLH  &kp V  &kp X  &kp C  &kp Z        &kp MINUS        &kp G       &kp D         &kp M  &kp J  &kp B  &kp MINUS
-                        &none  &lp 4 SPACE  &kp BACKSPACE    &none       &lpy 2 ENTER  &none
+                                                         &lp 2 LANGUAGE_2  &lp 3 SPACE       &lp 2 TAB              &lp 4 BACKSPACE       &lpy 1 ENTER       &lp 4 LANGUAGE_1
             >;
         };
 
@@ -252,20 +242,20 @@
         num_layer {
             label = "NUM";
             bindings = <
-            &bt_0  &kp F7  &kp F8  &kp F9  &kp F12    &none      &kp N7  &kp N8  &kp N9  &none
-            &bt_1  &kp F4  &kp F5  &kp F6  &kp F11    &kp PLUS   &kp N4  &kp N5  &kp N6  &kp MINUS
-&bt BT_CLR  &bt_2  &kp F1  &kp F2  &kp F3  &kp F10    &kp STAR   &kp N1  &kp N2  &kp N3  &kp FSLH   &kp FSLH
-                           &none   &none   &none      &kp LANG2  &kp N0  &kp N0
+            &bt_0  &kp F7  &kp F8  &kp F9    &kp F12      &none      &kp N7  &kp N8  &kp N9  &none
+            &bt_1  &kp F4  &kp F5  &kp F6    &kp F11      &kp PLUS   &kp N4  &kp N5  &kp N6  &kp MINUS
+&bt BT_CLR  &bt_2  &kp F1  &kp F2  &kp F3    &kp F10      &kp STAR   &kp N1  &kp N2  &kp N3  &kp FSLH   &kp FSLH
+                           &none   &kp LEFT  &kp RIGHT    &kp LANG2  &kp N0  &kp N0
             >;
         };
 
         sym_layer {
             label = "SYM";
             bindings = <
-       &kp EXCL      &kp AT        &kp HASH  &kp DLLR   &kp PRCNT    &kp CARET       &kp AMPS        &kp STAR  &kp LBRC   &kp RBRC
-       &kp QUESTION  &kp BSLH      &kp PIPE  &kp EQUAL  &kp PLUS     &kp GRAVE       &kp SQT         &kp DQT   &kp COLON  &kp SEMI
-&mo 3  &kp LEFT      &kp UP_ARROW  &kp DOWN  &kp RIGHT  &kp EXCL     &kp QUESTION    &kp LPAR        &kp RPAR  &kp LBKT   &kp RBKT  &kp TILDE
-                                   &none     &none      &none        &kp LANGUAGE_2  &kp LANGUAGE_1  &none
+                 &kp EXCL      &kp AT     &kp HASH   &kp DLLR       &kp PRCNT    &kp CARET       &kp AMPS        &kp STAR  &kp LBRC   &kp RBRC
+                 &kp QUESTION  &kp BSLH   &kp PIPE   &kp EQUAL      &kp PLUS     &kp GRAVE       &kp SQT         &kp DQT   &kp COLON  &kp SEMI
+&kp EXCLAMATION  &kp LG(Z)     &kp LG(X)  &kp LG(C)  &kp LG(RIGHT)  &kp LBRC     &kp RBRC        &kp LPAR        &kp RPAR  &kp LBKT   &kp RBKT  &kp TILDE
+                                          &none      &none          &none        &kp LANGUAGE_2  &kp LANGUAGE_1  &none
             >;
         };
 

@@ -104,12 +104,14 @@
             bindings = <&kp LANGUAGE_1>;
             key-positions = <27 28>;
             layers = <0>;
+            require-prior-idle-ms = <50>;
         };
 
         combo_en {
             bindings = <&kp LANGUAGE_2>;
             key-positions = <23 24>;
             layers = <0>;
+            require-prior-idle-ms = <50>;
         };
 
         combo_esc {

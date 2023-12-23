@@ -266,9 +266,9 @@
         nav_layer {
             label = "NAV";
             bindings = <
-       &none         &kp LG(LEFT_ARROW)  &kp UP_ARROW    &kp LG(RIGHT)    &kp LG(T)        &none      &none      &none            &kp RG(O)  &none
-       &kp LA(LEFT)  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LA(RIGHT)    &kp RCTRL  &kp RSHFT  &kp RGUI         &kp RALT   &kp RCTRL
-&none  &kp LG(Z)     &kp LG(X)           &kp LG(C)       &kp LG(V)        &kp LG(B)        &kp RG(N)  &none      &kp RIGHT_SHIFT  &kp RCMD   &kp RALT   &none
+       &none         &kp LG(LEFT_ARROW)  &kp UP_ARROW    &kp LG(RIGHT)    &kp LG(T)        &trans     &trans     &trans           &trans    &trans
+       &kp LA(LEFT)  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LA(RIGHT)    &kp RCTRL  &kp RSHFT  &kp RGUI         &kp RALT  &kp RCTRL
+&none  &kp LG(Z)     &kp LG(X)           &kp LG(C)       &kp LG(V)        &kp LG(B)        &trans     &none      &kp RIGHT_SHIFT  &kp RCMD  &kp RALT   &none
                                          &none           &kp SPACE        &kp TAB          &none      &none      &none
             >;
         };

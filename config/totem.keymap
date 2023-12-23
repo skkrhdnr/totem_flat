@@ -51,13 +51,6 @@
             layers = <0>;
         };
 
-        combo_tab {
-            bindings = <&kp TAB>;
-            key-positions = <12 13>;
-            timeout-ms = <COMBO_MS>;
-            layers = <0>;
-        };
-
         combo_left_enter {
             bindings = <&kp ENTER>;
             key-positions = <33 13>;
@@ -67,13 +60,6 @@
         combo_ctrl_en {
             bindings = <&kp LC(SEMICOLON)>;
             key-positions = <16 18>;
-            layers = <0>;
-        };
-
-        combo_bs {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <16 17>;
-            timeout-ms = <COMBO_MS>;
             layers = <0>;
         };
 
@@ -92,31 +78,31 @@
 
         combo_q {
             bindings = <&kp Q>;
-            key-positions = <11 12>;
+            key-positions = <1 2>;
         };
 
         combo_p {
             bindings = <&kp P>;
-            key-positions = <17 18>;
+            key-positions = <7 8>;
         };
 
         combo_jp {
             bindings = <&kp LANGUAGE_1>;
-            key-positions = <27 28>;
+            key-positions = <16 17>;
             layers = <0>;
             require-prior-idle-ms = <50>;
         };
 
         combo_en {
             bindings = <&kp LANGUAGE_2>;
-            key-positions = <23 24>;
+            key-positions = <12 13>;
             layers = <0>;
             require-prior-idle-ms = <50>;
         };
 
         combo_esc {
             bindings = <&kp ESCAPE>;
-            key-positions = <22 23>;
+            key-positions = <11 12>;
             layers = <0>;
         };
 
@@ -250,7 +236,7 @@
             bindings = <
                       &kp Q             &kp W            &kp E             &kp R             &kp T                  &kp Y                 &kp U              &kp I             &kp O             &kp P
                       &cm_left LCTRL A  &cm_left LALT S  &cm_left LGUI D   &cm_left LSHFT F  &cm_left LS(LGUI) G    &cm_right RS(RGUI) H  &cm_right RSHFT J  &cm_right RGUI K  &cm_right RALT L  &cm_right RCTRL MINUS
-&cm_left LCMD ESCAPE  &kp Z             &kp X            &kp C             &kp V             &kp B                  &kp N                 &kp M              &kp COMMA         &kp DOT           &kp SLASH              &kp UNDERSCORE
+&cm_left LCMD ESCAPE  &kp Z             &kp X            &kp C             &lp 3 V           &kp B                  &kp N                 &lp 2 M            &kp COMMA         &kp DOT           &kp SLASH              &kp UNDERSCORE
                                                          &lp 3 LANGUAGE_2  &lp 4 SPACE       &lp 3 TAB              &lp 5 BACKSPACE       &lpy 2 ENTER       &lp 5 LANGUAGE_1
             >;
         };
@@ -267,9 +253,9 @@
         nav_layer {
             label = "NAV";
             bindings = <
-       &none         &kp LG(LEFT_ARROW)  &kp UP_ARROW    &kp LG(RIGHT)    &kp LG(T)        &none      &none      &none     &kp RG(O)  &none
-       &kp LA(LEFT)  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LA(RIGHT)    &kp RCTRL  &kp RSHFT  &kp RGUI  &kp RALT   &kp RCTRL
-&none  &kp LG(Z)     &kp LG(X)           &kp LG(C)       &kp LG(V)        &kp LG(B)        &kp RG(N)  &none      &none     &none      &none      &none
+       &none         &kp LG(LEFT_ARROW)  &kp UP_ARROW    &kp LG(RIGHT)    &kp LG(T)        &none      &none      &none            &kp RG(O)  &none
+       &kp LA(LEFT)  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LA(RIGHT)    &kp RCTRL  &kp RSHFT  &kp RGUI         &kp RALT   &kp RCTRL
+&none  &kp LG(Z)     &kp LG(X)           &kp LG(C)       &kp LG(V)        &kp LG(B)        &kp RG(N)  &none      &kp RIGHT_SHIFT  &kp RCMD   &kp RALT   &none
                                          &none           &kp SPACE        &kp TAB          &none      &none      &none
             >;
         };
@@ -287,10 +273,10 @@
         sym_layer {
             label = "SYM";
             bindings = <
-                 &kp EXCL      &kp AT     &kp HASH   &kp DLLR   &kp PRCNT    &kp CARET       &kp AMPS        &kp STAR  &kp LBRC   &kp RBRC
-                 &kp QUESTION  &kp BSLH   &kp PIPE   &kp EQUAL  &kp PLUS     &kp GRAVE       &kp SQT         &kp DQT   &kp COLON  &kp SEMI
-&kp EXCLAMATION  &kp LG(Z)     &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LBRC     &kp RBRC        &kp LPAR        &kp RPAR  &kp LBKT   &kp RBKT  &kp RBRC
-                                          &none      &none      &none        &kp LANGUAGE_2  &kp LANGUAGE_1  &none
+                 &kp EXCL      &kp AT     &kp HASH   &kp DLLR   &kp PRCNT    &kp CARET     &kp AMPS  &kp STAR  &kp LBRC   &kp RBRC
+                 &kp QUESTION  &kp BSLH   &kp PIPE   &kp EQUAL  &kp PLUS     &kp GRAVE     &kp SQT   &kp DQT   &kp COLON  &kp SEMI
+&kp EXCLAMATION  &kp LG(Z)     &kp LG(X)  &kp LG(C)  &kp LG(V)  &none        &none         &kp LPAR  &kp RPAR  &kp LBKT   &kp RBKT  &kp RBRC
+                                          &none      &none      &none        &kp QUESTION  &kp EXCL  &kp LBRC
             >;
         };
 

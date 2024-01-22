@@ -240,8 +240,8 @@
             bindings = <
                       &kp Q             &kp W            &kp E            &kp R             &kp T                  &kp Y                 &kp U              &kp I              &kp O               &kp P
                       &cm_left LCTRL A  &cm_left LALT S  &cm_left LGUI D  &cm_left LSHFT F  &cm_left LS(LGUI) G    &cm_right RS(RGUI) H  &cm_right RSHFT J  &cm_right RGUI K   &cm_right RALT L    &cm_right RCTRL MINUS
-&cm_left LCMD ESCAPE  &kp Z             &lp_left 5 X     &lp_left 4 C     &lp_left 3 V      &kp B                  &kp N                 &lp_right 2 M      &lp_right 4 COMMA  &lp_right 3 PERIOD  &kp SLASH              &kp UNDERSCORE
-                                                         &none            &lp 4 SPACE       &lp_left 6 TAB         &lp 5 BACKSPACE       &lpy 2 ENTER       &none
+&cm_left LCMD ESCAPE  &kp Z             &lp_left 5 X     &lp_left 4 C     &lp_left 3 V      &kp B                  &kp N                 &lp_right 2 M      &lp_right 4 COMMA  &lp_right 5 PERIOD  &kp SLASH              &kp UNDERSCORE
+                                                         &none            &lp 4 SPACE       &lp_left 3 TAB         &lp 5 BACKSPACE       &lpy 2 ENTER       &none
             >;
         };
 
@@ -291,15 +291,6 @@
        &kp RA(TAB)  &kp RG(RA(RS(RC(LEFT))))  &kp RG(RA(RS(RC(DOWN))))  &kp RG(RA(RC(RS(RIGHT))))  &kp RG(TAB)      &kp K_MUTE  &kp RS(RA(C_VOL_DN))  &kp RS(RA(C_VOL_UP))  &none  &bt_1
 &none  &none        &kp RA(UP)                &kp RG(RA(RS(RC(N))))     &kp RA(DOWN)               &none            &none       &kp C_BRI_DEC         &kp C_BRI_INC         &none  &none  &bt BT_CLR
                                               &kp LG(N0)                &kp LG(PLUS)               &kp LG(MINUS)    &none       &none                 &none
-            >;
-        };
-
-        mouse+num {
-            bindings = <
-        &trans     &mwh SCROLL_LEFT  &mmv MOVE_UP    &mwh SCROLL_RIGHT  &trans       &trans        &kp N7        &kp N8  &kp N9  &trans
-        &mkp RCLK  &mmv MOVE_LEFT    &mmv MOVE_DOWN  &mmv MOVE_RIGHT    &mkp LCLK    &kp LS(PLUS)  &kp NUMBER_4  &kp N5  &kp N6  &kp MINUS
-&trans  &trans     &mwh SCROLL_UP    &trans          &mwh SCROLL_DOWN   &trans       &kp LS(STAR)  &kp N1        &kp N2  &kp N3  &kp FSLH   &trans
-                                     &trans          &trans             &trans       &trans        &kp N0        &trans
             >;
         };
 

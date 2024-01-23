@@ -102,6 +102,12 @@
             bindings = <&kp BACKSPACE>;
             key-positions = <15 16>;
         };
+
+        combo_toggle_input {
+            bindings = <&tog 1>;
+            key-positions = <33 36>;
+            layers = <0 1>;
+        };
     };
 
     macros {
@@ -247,10 +253,10 @@
 
         input {
             bindings = <
-         &kp Q  &kp L  &kp U           &kp COMMA    &kp DOT      &kp F     &kp W         &kp R           &kp Y  &kp P
-         &kp E  &kp I  &kp A           &kp O        &kp MINUS    &kp K     &kp T         &kp N           &kp S  &kp H
-&kp ESC  &kp Z  &kp X  &kp C           &kp V        &kp SEMI     &kp G     &kp D         &kp M           &kp J  &kp B  &kp LS(UNDERSCORE)
-                       &kp LANGUAGE_2  &lp 4 SPACE  &kp TAB      &kp BSPC  &lpy 2 ENTER  &kp LANGUAGE_1
+         &kp Q  &kp W  &kp E           &kp R        &kp T        &kp Y     &kp U         &kp I           &kp O    &kp P
+         &kp A  &kp S  &kp D           &kp F        &kp G        &kp H     &kp J         &kp K           &kp L    &kp MINUS
+&kp ESC  &kp Z  &kp X  &kp C           &kp V        &kp B        &kp N     &kp M         &kp COMMA       &kp DOT  &kp FSLH   &kp LS(UNDER)
+                       &kp LANGUAGE_2  &lp 4 SPACE  &lp 3 TAB    &kp BSPC  &lpy 2 ENTER  &kp LANGUAGE_1
             >;
         };
 

@@ -94,19 +94,13 @@
 
         combo_tab {
             bindings = <&kp TAB>;
-            key-positions = <13 14>;
+            key-positions = <15 16>;
             layers = <0>;
         };
 
         combo_bs {
             bindings = <&kp BACKSPACE>;
             key-positions = <15 16>;
-        };
-
-        combo_toggle_input {
-            bindings = <&tog 1>;
-            key-positions = <33 36>;
-            layers = <0 1>;
         };
     };
 
@@ -246,17 +240,8 @@
             bindings = <
                       &kp Q             &kp W            &kp E            &kp R             &kp T                  &kp Y                 &kp U              &kp I              &kp O               &kp P
                       &cm_left LCTRL A  &cm_left LALT S  &cm_left LGUI D  &cm_left LSHFT F  &cm_left LS(LGUI) G    &cm_right RS(RGUI) H  &cm_right RSHFT J  &cm_right RGUI K   &cm_right RALT L    &cm_right RCTRL MINUS
-&cm_left LCMD ESCAPE  &kp Z             &lp_left 5 X     &lp_left 4 C     &lp_left 3 V      &kp B                  &kp N                 &lp_right 2 M      &lp_right 4 COMMA  &lp_right 5 PERIOD  &kp SLASH              &kp UNDERSCORE
-                                                         &none            &lp 4 SPACE       &lp_left 3 TAB         &lp 5 BACKSPACE       &lpy 2 ENTER       &kp GLOBE
-            >;
-        };
-
-        input {
-            bindings = <
-         &kp Q  &kp W  &kp E           &kp R        &kp T        &kp Y     &kp U         &kp I           &kp O    &kp P
-         &kp A  &kp S  &kp D           &kp F        &kp G        &kp H     &kp J         &kp K           &kp L    &kp MINUS
-&kp ESC  &kp Z  &kp X  &kp C           &kp V        &kp B        &kp N     &kp M         &kp COMMA       &kp DOT  &kp FSLH   &kp LS(UNDER)
-                       &kp LANGUAGE_2  &lp 4 SPACE  &lp 3 TAB    &kp BSPC  &lpy 2 ENTER  &kp LANGUAGE_1
+&cm_left LCMD ESCAPE  &kp Z             &lp_left 4 X     &lp_left 3 C     &lp_left 2 V      &kp B                  &kp N                 &lp_right 1 M      &lp_right 3 COMMA  &lp_right 4 PERIOD  &kp SLASH              &kp UNDERSCORE
+                                                         &none            &lp 3 SPACE       &lp 3 SPACE            &lp 4 BACKSPACE       &lpy 1 ENTER       &kp GLOBE
             >;
         };
 

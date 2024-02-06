@@ -62,16 +62,6 @@
             layers = <0>;
         };
 
-        combo_q {
-            bindings = <&kp Q>;
-            key-positions = <11 12>;
-        };
-
-        combo_p {
-            bindings = <&kp P>;
-            key-positions = <17 18>;
-        };
-
         combo_jp {
             bindings = <&kp LANGUAGE_1>;
             key-positions = <16 17>;
@@ -94,7 +84,7 @@
 
         combo_tab {
             bindings = <&kp TAB>;
-            key-positions = <15 16>;
+            key-positions = <13 14>;
             layers = <0>;
         };
 

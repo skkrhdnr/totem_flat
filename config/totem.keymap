@@ -199,8 +199,8 @@
         bindings = <&mo>, <&kp>;
 
         #binding-cells = <2>;
-        tapping-term-ms = <150>;
-        quick-tap-ms = <150>;
+        tapping-term-ms = <125>;
+        quick-tap-ms = <125>;
         flavor = "tap-preferred";
         hold-trigger-key-positions = <5 5 6 7 8 9 15 16 17 18 19 26 27 28 29 30 31 36 37 15 26 35 36>;
     };
@@ -211,8 +211,8 @@
         bindings = <&mo>, <&kp>;
 
         #binding-cells = <2>;
-        tapping-term-ms = <150>;
-        quick-tap-ms = <150>;
+        tapping-term-ms = <125>;
+        quick-tap-ms = <125>;
         hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 21 22 23 24 25 32 33 34 20>;
         flavor = "tap-preferred";
     };
@@ -230,8 +230,8 @@
             bindings = <
               &kp Q             &kp W            &kp E            &kp R             &kp T                  &kp Y                 &kp U              &kp I              &kp O               &kp P
               &cm_left LCTRL A  &cm_left LALT S  &cm_left LGUI D  &cm_left LSHFT F  &cm_left LS(LGUI) G    &cm_right RS(RGUI) H  &cm_right RSHFT J  &cm_right RGUI K   &cm_right RALT L    &cm_right RCTRL MINUS
-&lp 3 ESCAPE  &kp Z             &lp_left 4 X     &lp_left 3 C     &lp_left 2 V      &kp B                  &kp N                 &lp_right 2 M      &lp_right 3 COMMA  &lp_right 4 PERIOD  &kp SLASH              &kp UNDERSCORE
-                                                 &none            &lp 3 SPACE       &lp 2 SPACE            &lp 4 BACKSPACE       &lpy 1 ENTER       &kp GLOBE
+&lp 3 ESCAPE  &kp Z             &lp_left 4 X     &lp_left 3 C     &lp_left 2 V      &kp B                  &kp N                 &lp_right 2 M      &lp_right 3 COMMA  &lp_right 4 PERIOD  &kp SLASH              &kp BACKSPACE
+                                                 &none            &lp 3 SPACE       &lp 2 SPACE            &lp 4 BACKSPACE       &lpy 1 ENTER       &kp LS(LG(J))
             >;
         };
 

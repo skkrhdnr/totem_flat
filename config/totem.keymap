@@ -228,10 +228,10 @@
         base_layer {
             label = "BASE";
             bindings = <
-              &kp Q             &kp W            &kp E            &kp R             &kp T                  &kp Y                 &kp U              &kp I              &kp O               &kp P
-              &cm_left LCTRL A  &cm_left LALT S  &cm_left LGUI D  &cm_left LSHFT F  &cm_left LS(LGUI) G    &cm_right RS(RGUI) H  &cm_right RSHFT J  &cm_right RGUI K   &cm_right RALT L    &cm_right RCTRL MINUS
-&lp 3 ESCAPE  &kp Z             &lp_left 2 X     &lp_left 3 C     &lp_left 2 V      &lp_left 4 B           &lp_right 4 N         &lp_right 1 M      &lp_right 3 COMMA  &lp_right 2 PERIOD  &kp SLASH              &kp BACKSPACE
-                                                 &none            &lp 3 SPACE       &lp 2 SPACE            &lp 4 BACKSPACE       &lpy 1 ENTER       &kp LS(LG(J))
+           &kp Q             &kp W            &kp E            &kp R             &kp T                  &kp Y                 &kp U              &kp I              &kp O               &kp P
+           &cm_left LCTRL A  &cm_left LALT S  &cm_left LGUI D  &cm_left LSHFT F  &cm_left LS(LGUI) G    &cm_right RS(RGUI) H  &cm_right RSHFT J  &cm_right RGUI K   &cm_right RALT L    &cm_right RCTRL MINUS
+&lp 3 TAB  &kp Z             &lp_left 2 X     &lp_left 3 C     &lp_left 2 V      &lp_left 4 B           &lp_right 4 N         &lp_right 1 M      &lp_right 3 COMMA  &lp_right 2 PERIOD  &kp SLASH              &kp BACKSPACE
+                                              &none            &lp 3 SPACE       &lp 2 SPACE            &lp 4 BACKSPACE       &lpy 1 ENTER       &kp LS(LG(J))
             >;
         };
 
@@ -268,10 +268,10 @@
         fnc_layer {
             label = "FNC";
             bindings = <
-       &none        &kp RC(RS(TAB))           &kp RG(RA(RS(RC(UP))))    &kp RC(TAB)                &none            &kp C_PP    &kp C_PREVIOUS        &kp C_NEXT            &none  &bt_0
-       &kp RA(TAB)  &kp RG(RA(RS(RC(LEFT))))  &kp RG(RA(RS(RC(DOWN))))  &kp RG(RA(RC(RS(RIGHT))))  &kp RG(TAB)      &kp K_MUTE  &kp RS(RA(C_VOL_DN))  &kp RS(RA(C_VOL_UP))  &none  &bt_1
-&none  &none        &kp RA(UP)                &kp RG(RA(RS(RC(N))))     &kp RA(DOWN)               &none            &none       &kp C_BRI_DEC         &kp C_BRI_INC         &none  &none  &bt BT_CLR
-                                              &kp LG(N0)                &kp LG(PLUS)               &kp LG(MINUS)    &none       &none                 &none
+                            &none        &kp RC(RS(TAB))           &kp RG(RA(RS(RC(UP))))    &kp RC(TAB)                &none            &kp C_PP    &kp C_PREVIOUS        &kp C_NEXT            &none  &bt_0
+                            &kp RA(TAB)  &kp RG(RA(RS(RC(LEFT))))  &kp RG(RA(RS(RC(DOWN))))  &kp RG(RA(RC(RS(RIGHT))))  &kp RG(TAB)      &kp K_MUTE  &kp RS(RA(C_VOL_DN))  &kp RS(RA(C_VOL_UP))  &none  &bt_1
+&kp RG(RS(RA(RC(ESCAPE))))  &none        &kp RA(UP)                &kp RG(RA(RS(RC(N))))     &kp RA(DOWN)               &none            &none       &kp C_BRI_DEC         &kp C_BRI_INC         &none  &none  &bt BT_CLR
+                                                                   &kp LG(N0)                &kp LG(PLUS)               &kp LG(MINUS)    &none       &none                 &none
             >;
         };
 

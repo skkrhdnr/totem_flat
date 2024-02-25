@@ -81,6 +81,20 @@
             key-positions = <11 13>;
             layers = <0>;
         };
+
+        combo_jp2 {
+            bindings = <&kp LANGUAGE_1>;
+            key-positions = <17 12>;
+            require-prior-idle-ms = <50>;
+            layers = <0>;
+        };
+
+        combo_en2 {
+            bindings = <&kp LANGUAGE_2>;
+            key-positions = <13 16>;
+            require-prior-idle-ms = <50>;
+            layers = <0>;
+        };
     };
 
     macros {

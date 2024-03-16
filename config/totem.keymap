@@ -173,8 +173,8 @@
         compatible = "zmk,behavior-hold-tap";
         label = "CM_RIGHT";
         flavor = "tap-preferred";
-        tapping-term-ms = <175>;
-        quick-tap-ms = <175>;
+        tapping-term-ms = <150>;
+        quick-tap-ms = <150>;
 
         //global-quick-tap;
 
@@ -190,8 +190,8 @@
         bindings = <&kp>, <&kp>;
 
         #binding-cells = <2>;
-        tapping-term-ms = <175>;
-        quick-tap-ms = <175>;
+        tapping-term-ms = <150>;
+        quick-tap-ms = <150>;
         flavor = "tap-preferred";
         hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 26 27 28 29 30 31 35 36 37>;
     };
@@ -231,10 +231,10 @@
         base_layer {
             label = "BASE";
             bindings = <
-                  &cm_left LS(LGUI) Q  &kp W            &kp E                 &kp R              &kp T              &kp Y               &kp U               &kp I                  &kp O                  &cm_right RS(RGUI) P
-                  &kp A                &kp S            &kp D                 &cm_left LSHIFT F  &cm_left LGUI G    &cm_right RGUI H    &cm_right RSHIFT J  &kp K                  &kp L                  &kp MINUS
-&mt LCTRL ESCAPE  &kp Z                &cm_left LALT X  &lp_left 3 C          &lp_left 2 V       &kp B              &kp N               &lp_right 2 M       &lp_right 3 COMMA      &cm_right RALT PERIOD  &kp SLASH             &mt RCTRL BACKSPACE
-                                                        &lp_left 4 BACKSPACE  &lp 3 SPACE        &mt RGUI TAB       &mt RGUI BACKSPACE  &lpy 1 ENTER        &lp_right 4 RG(RS(J))
+                  &kp Q             &kp W            &kp E                 &kp R              &kp T                  &kp Y                  &kp U               &kp I                  &kp O              &kp P
+                  &cm_left LCTRL A  &cm_left LALT S  &cm_left LGUI D       &cm_left LSHIFT F  &cm_left LS(LGUI) G    &cm_right RS(RGUI) H   &cm_right RSHIFT J  &cm_right RGUI K       &cm_right RCTRL L  &cm_right RCTRL MINUS
+&mt LCTRL ESCAPE  &kp Z             &kp X            &lp_left 3 C          &lp_left 2 V       &kp B                  &kp N                  &lp_right 2 M       &lp_right 3 COMMA      &kp PERIOD         &kp SLASH              &mt RCTRL BACKSPACE
+                                                     &lp_left 4 BACKSPACE  &lp 3 SPACE        &lp_left 4 TAB         &lp_right 4 BACKSPACE  &lpy 1 ENTER        &lp_right 4 RG(RS(J))
             >;
         };
 

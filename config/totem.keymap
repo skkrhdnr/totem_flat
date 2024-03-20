@@ -233,8 +233,8 @@
             bindings = <
                   &kp Q             &kp W            &kp E                 &kp R              &kp T                  &kp Y                  &kp U               &kp I                  &kp O             &kp P
                   &cm_left LCTRL A  &cm_left LALT S  &cm_left LGUI D       &cm_left LSHIFT F  &cm_left LS(LGUI) G    &cm_right RS(RGUI) H   &cm_right RSHIFT J  &cm_right RGUI K       &cm_right RALT L  &cm_right RCTRL MINUS
-&mt LCTRL ESCAPE  &kp Z             &kp X            &kp C                 &lp_left 2 V       &kp B                  &kp N                  &lp_right 2 M       &lp_right 3 COMMA      &kp PERIOD        &kp SLASH              &lp_right 5 UNDERSCORE
-                                                     &lp_left 4 BACKSPACE  &lp 3 SPACE        &lp_left 4 TAB         &lp_right 4 BACKSPACE  &lpy 1 ENTER        &lp_right 4 RG(RS(J))
+&mt LCTRL ESCAPE  &kp Z             &kp X            &kp C                 &lp_left 3 V       &kp B                  &kp N                  &lp_right 3 M       &lp_right 2 N          &kp COMMA         &kp PERIOD             &lp_right 5 UNDERSCORE
+                                                     &lp_left 4 BACKSPACE  &lp 2 SPACE        &lp_left 4 TAB         &lp_right 4 BACKSPACE  &lpy 1 ENTER        &lp_right 4 RG(RS(J))
             >;
         };
 
@@ -248,16 +248,6 @@
             >;
         };
 
-        num_layer {
-            label = "NUM";
-            bindings = <
-       &none  &kp F7  &kp F8      &kp F9    &kp F12      &none     &kp N7        &kp N8  &kp N9  &none
-       &none  &kp F4  &kp F5      &kp F6    &kp F11      &kp PLUS  &kp N4        &kp N5  &kp N6  &kp MINUS
-&none  &none  &kp F1  &kp F2      &kp F3    &kp F10      &kp STAR  &kp N1        &kp N2  &kp N3  &kp FSLH   &kp FSLH
-                      &kp LG(N0)  &kp LEFT  &kp RIGHT    &none     &kp NUMBER_0  &none
-            >;
-        };
-
         sym_layer {
             label = "SYM";
             bindings = <
@@ -265,6 +255,16 @@
        &kp QUESTION  &kp BSLH   &kp PIPE   &kp EQUAL  &kp PLUS        &kp GRAVE        &kp SQT   &kp DQT   &kp COLON  &kp SEMI
 &none  &kp LG(Z)     &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp QUESTION    &kp EXCLAMATION  &kp LPAR  &kp RPAR  &kp LBKT   &kp RBKT  &none
                                 &none      &kp EQUAL  &kp PLUS        &kp QUESTION     &kp EXCL  &kp LBRC
+            >;
+        };
+
+        num_layer {
+            label = "NUM";
+            bindings = <
+       &none  &kp F7  &kp F8      &kp F9    &kp F12      &none     &kp N7        &kp N8  &kp N9  &none
+       &none  &kp F4  &kp F5      &kp F6    &kp F11      &kp PLUS  &kp N4        &kp N5  &kp N6  &kp MINUS
+&none  &none  &kp F1  &kp F2      &kp F3    &kp F10      &kp STAR  &kp N1        &kp N2  &kp N3  &kp FSLH   &kp FSLH
+                      &kp LG(N0)  &kp LEFT  &kp RIGHT    &none     &kp NUMBER_0  &none
             >;
         };
 

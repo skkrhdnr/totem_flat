@@ -254,7 +254,7 @@
        &kp EXCL      &kp AT     &kp HASH   &kp DLLR   &kp PRCNT       &kp CARET        &kp AMPS  &kp STAR  &kp LBRC   &kp RBRC
        &kp QUESTION  &kp BSLH   &kp PIPE   &kp EQUAL  &kp PLUS        &kp GRAVE        &kp SQT   &kp DQT   &kp COLON  &kp SEMI
 &none  &kp LG(Z)     &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp QUESTION    &kp EXCLAMATION  &kp LPAR  &kp RPAR  &kp LBKT   &kp RBKT  &none
-                                &none      &kp EQUAL  &kp PLUS        &kp QUESTION     &kp EXCL  &kp LBRC
+                                &none      &none      &kp PLUS        &kp QUESTION     &kp EXCL  &kp LBRC
             >;
         };
 
@@ -271,10 +271,10 @@
         fnc_layer {
             label = "FNC";
             bindings = <
-       &none  &none            &kp LG(UP_ARROW)    &none          &none         &kp C_PP    &kp C_PREVIOUS        &kp C_NEXT            &none  &bt_0
-       &none  &kp LC(LS(TAB))  &kp LG(DOWN_ARROW)  &kp LC(TAB)    &none         &kp K_MUTE  &kp RS(RA(C_VOL_DN))  &kp RS(RA(C_VOL_UP))  &none  &bt_1
-&none  &none  &kp RA(UP)       &none               &kp RA(DOWN)   &none         &none       &kp C_BRI_DEC         &kp C_BRI_INC         &none  &none  &bt BT_CLR
-                               &kp LG(PLUS)        &kp LG(MINUS)  &kp LG(N0)    &none       &none                 &none
+       &none  &kp LG(LEFT_BRACKET)  &kp LG(UP_ARROW)    &kp LG(RIGHT_BRACKET)  &none            &kp C_PP    &kp C_PREVIOUS        &kp C_NEXT            &none  &bt_0
+       &none  &kp LC(LS(TAB))       &kp LG(DOWN_ARROW)  &kp LC(TAB)            &none            &kp K_MUTE  &kp RS(RA(C_VOL_DN))  &kp RS(RA(C_VOL_UP))  &none  &bt_1
+&none  &none  &kp RA(UP)            &none               &kp RA(DOWN)           &none            &none       &kp C_BRI_DEC         &kp C_BRI_INC         &none  &none  &bt BT_CLR
+                                    &kp LG(N0)          &kp LG(PLUS)           &kp LG(MINUS)    &none       &none                 &none
             >;
         };
 

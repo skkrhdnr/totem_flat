@@ -234,7 +234,7 @@
                   &kp Q             &kp W            &kp E              &kp R              &kp T                  &kp Y                  &kp U               &kp I                  &kp O               &kp P
                   &cm_left LCTRL A  &cm_left LALT S  &cm_left LGUI D    &cm_left LSHIFT F  &cm_left LS(LGUI) G    &cm_right RS(RGUI) H   &cm_right RSHIFT J  &cm_right RGUI K       &cm_right RALT L    &cm_right RCTRL MINUS
 &mt LCTRL ESCAPE  &kp Z             &kp X            &kp C              &lp_left 3 V       &kp B                  &kp N                  &lp_right 3 M       &lp_right 2 COMMA      &lp_right 5 PERIOD  &kp SLASH              &lp_right 5 UNDERSCORE
-                                                     &kp LG(LS(ENTER))  &lp 2 SPACE        &kp TAB                &lp_right 4 BACKSPACE  &lpy 1 ENTER        &lp_right 4 RG(RS(J))
+                                                     &kp LG(LS(ENTER))  &lp 2 SPACE        &lp 3 TAB              &lp_right 4 BACKSPACE  &lpy 1 ENTER        &lp_right 4 RG(RS(J))
             >;
         };
 

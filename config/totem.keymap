@@ -287,7 +287,7 @@
             >;
         };
 
-        num+com {
+        numcom {
             label = "NUM";
             bindings = <
        &kp LG(Q)  &kp LG(W)  &kp LG(E)   &kp LG(R)  &kp LG(T)    &none          &kp N7        &kp N8  &kp N9  &none

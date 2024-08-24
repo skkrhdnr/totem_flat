@@ -233,7 +233,7 @@
             bindings = <
                   &kp Q             &kp W            &kp E              &kp R              &kp T                  &kp Y                 &kp U               &kp I                  &kp O               &kp P
                   &cm_left LCTRL A  &cm_left LALT S  &cm_left LGUI D    &cm_left LSHIFT F  &cm_left LS(LGUI) G    &cm_right RS(RGUI) H  &cm_right RSHIFT J  &cm_right RGUI K       &cm_right RALT L    &cm_right RCTRL MINUS
-&mt LCTRL ESCAPE  &kp Z             &kp X            &kp C              &lp_left 3 V       &kp B                  &kp N                 &lp_right 3 M       &lp_right 2 COMMA      &lp_right 5 PERIOD  &kp SLASH              &lp_right 5 UNDERSCORE
+&mt LCTRL ESCAPE  &kp Z             &kp X            &kp C              &lp_left 3 V       &kp B                  &kp N                 &lp_right 3 M       &lp_right 2 COMMA      &lp_right 5 PERIOD  &kp SLASH              &kp GLOBE
                                                      &kp LG(LS(ENTER))  &lp 2 SPACE        &lp 6 TAB              &lp 4 BACKSPACE       &lpy 1 ENTER        &lp_right 4 RG(RS(J))
             >;
         };
@@ -271,9 +271,9 @@
         fnc_layer {
             label = "FNC";
             bindings = <
-       &none  &kp LG(LEFT_BRACKET)  &kp LG(UP_ARROW)    &kp LG(RIGHT_BRACKET)  &none            &kp C_PP    &kp C_PREVIOUS        &kp C_NEXT            &none  &bt_0
-       &none  &kp LC(LS(TAB))       &kp LG(DOWN_ARROW)  &kp LC(TAB)            &none            &kp K_MUTE  &kp RS(RA(C_VOL_DN))  &kp RS(RA(C_VOL_UP))  &none  &bt_1
-&none  &none  &kp RA(UP)            &none               &kp RA(DOWN)           &none            &none       &kp C_BRI_DEC         &kp C_BRI_INC         &none  &none  &bt BT_CLR
+       &none  &kp LG(LEFT_BRACKET)  &kp LG(UP_ARROW)    &kp LG(RIGHT_BRACKET)  &bt_0            &kp C_PP    &kp C_PREVIOUS        &kp C_NEXT            &none  &none
+       &none  &kp LC(LS(TAB))       &kp LG(DOWN_ARROW)  &kp LC(TAB)            &bt_1            &kp K_MUTE  &kp RS(RA(C_VOL_DN))  &kp RS(RA(C_VOL_UP))  &none  &none
+&none  &none  &kp RA(UP)            &none               &kp RA(DOWN)           &bt_2            &none       &kp C_BRI_DEC         &kp C_BRI_INC         &none  &none  &bt BT_CLR
                                     &kp LG(N0)          &kp LG(PLUS)           &kp LG(MINUS)    &none       &none                 &none
             >;
         };

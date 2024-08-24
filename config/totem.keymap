@@ -76,24 +76,9 @@
             require-prior-idle-ms = <50>;
         };
 
-        combo_esc {
-            bindings = <&kp ESCAPE>;
-            key-positions = <11 13>;
-            layers = <0>;
-        };
-
-        combo_jp2 {
-            bindings = <&kp LANGUAGE_1>;
-            key-positions = <17 12>;
-            require-prior-idle-ms = <50>;
-            layers = <0>;
-        };
-
-        combo_en2 {
-            bindings = <&kp LANGUAGE_2>;
-            key-positions = <11 18>;
-            require-prior-idle-ms = <50>;
-            layers = <0>;
+        combo_src {
+            bindings = <&combo_src>;
+            key-positions = <33 36>;
         };
     };
 
@@ -145,6 +130,13 @@
             label = "UE_LINE";
             #binding-cells = <0>;
             bindings = <&kp RG(LEFT) &kp ENTER &kp UP>;
+        };
+
+        combo_src: combo_src {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N5 &kp N7 &kp N0 &kp N4 &kp ENTER>;
+            label = "COMBO_SRC";
         };
     };
 

@@ -111,13 +111,6 @@
             bindings = <&kp LANG1 &kp A &kp R &kp I &kp G &kp A &kp T &kp O &kp U &kp G &kp O &kp Z &kp A &kp I &kp M &kp A &kp S &kp U>;
         };
 
-        yorosihku: yorosihku {
-            compatible = "zmk,behavior-macro";
-            label = "YOROSIHKU";
-            #binding-cells = <0>;
-            bindings = <&kp LANG1 &kp Y &kp O &kp R &kp O &kp S &kp I &kp K &kp U &kp O &kp N &kp E &kp G &kp A &kp I &kp I &kp T &kp A &kp S &kp I &kp M &kp A &kp S &kp U>;
-        };
-
         shita_line: shita_line {
             compatible = "zmk,behavior-macro";
             label = "SHITA_LINE";

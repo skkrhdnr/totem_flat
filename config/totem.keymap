@@ -289,10 +289,10 @@
 
         fc {
             bindings = <
-        &trans  &trans  &kp E   &trans  &kp T     &kp Y   &trans  &trans     &trans   &trans
-        &trans  &kp S   &kp D   &kp F   &kp G     &trans  &kp J   &kp K      &kp L    &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp M   &kp COMMA  &kp DOT  &trans  &trans
-                        &trans  &kp J   &trans    &trans  &kp J   &trans
+       &none  &none  &kp E  &none  &kp T    &kp Y  &none  &none      &none    &none
+       &none  &kp S  &kp D  &kp F  &kp G    &none  &kp J  &kp K      &kp L    &none
+&none  &none  &none  &none  &none  &none    &none  &kp M  &kp COMMA  &kp DOT  &none  &none
+                     &none  &kp J  &none    &none  &kp J  &none
             >;
         };
 

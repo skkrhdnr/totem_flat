@@ -56,8 +56,8 @@
             layers = <0>;
         };
 
-        combo_shita_line {
-            bindings = <&shita_line>;
+        combo_double_enter {
+            bindings = <&double_enter>;
             key-positions = <16 36>;
             layers = <0>;
         };
@@ -135,6 +135,13 @@
             #binding-cells = <0>;
             bindings = <&kp N5 &kp N7 &kp N0 &kp N4 &kp ENTER>;
             label = "COMBO_SRC";
+        };
+
+        double_enter: double_enter {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp ENTER &kp ENTER>;
+            label = "DOUBLE_ENTER";
         };
     };
 

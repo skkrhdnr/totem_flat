@@ -85,6 +85,42 @@
             bindings = <&tog 7>;
             key-positions = <32 37>;
         };
+
+        comb_next_tab {
+            bindings = <&kp RC(TAB)>;
+            key-positions = <12 13>;
+            layers = <1>;
+        };
+
+        combo_prev_tab {
+            bindings = <&kp RC(RS(TAB))>;
+            key-positions = <12 11>;
+            layers = <1>;
+        };
+
+        combo_next_app {
+            bindings = <&kp RG(TAB)>;
+            key-positions = <2 3>;
+            layers = <1>;
+        };
+
+        comb_prev_app {
+            bindings = <&kp RG(RS(TAB))>;
+            key-positions = <2 1>;
+            layers = <1>;
+        };
+
+        combo_next_window {
+            bindings = <&kp RA(TAB)>;
+            key-positions = <23 24>;
+            layers = <1>;
+        };
+
+        combo_prev_window {
+            bindings = <&kp RA(RS(TAB))>;
+            key-positions = <23 22>;
+            layers = <1>;
+        };
     };
 
     macros {
@@ -228,10 +264,10 @@
         base_layer {
             label = "BASE";
             bindings = <
-              &cm_left LCTRL Q  &kp W  &kp E            &kp R         &kp T                  &kp Y                 &kp U          &kp I             &kp O       &cm_right RCTRL P
-              &kp A             &kp S  &cm_left LGUI D  &kp F         &cm_left LS(LGUI) G    &cm_right RS(RGUI) H  &kp J          &cm_right RGUI K  &kp L       &kp MINUS
-&lp 4 ESCAPE  &kp Z             &kp X  &kp C            &lp_left 3 V  &kp B                  &kp N                 &lp_right 3 M  &kp COMMA         &kp PERIOD  &kp SLASH          &kp UNDERSCORE
-                                       &kp LEFT_SHIFT   &lp 2 SPACE   &lp 6 TAB              &lp 4 BACKSPACE       &lpy 1 ENTER   &kp RALT
+              &cm_left LCTRL Q  &kp W       &kp E            &kp R         &kp T                  &kp Y                 &kp U          &kp I             &kp O       &cm_right RCTRL P
+              &kp A             &kp S       &cm_left LGUI D  &kp F         &cm_left LS(LGUI) G    &cm_right RS(RGUI) H  &kp J          &cm_right RGUI K  &kp L       &kp MINUS
+&lp 4 ESCAPE  &kp Z             &mt LALT X  &kp C            &lp_left 3 V  &kp B                  &kp N                 &lp_right 3 M  &kp COMMA         &kp PERIOD  &kp SLASH          &kp UNDERSCORE
+                                            &kp LEFT_SHIFT   &lp 2 SPACE   &lp 6 TAB              &lp 4 BACKSPACE       &lpy 1 ENTER   &kp RALT
             >;
         };
 

@@ -44,7 +44,7 @@
         };
 
         combo_ctrl_en {
-            bindings = <&kp LC(SEMICOLON)>;
+            bindings = <&enenter>;
             key-positions = <16 18>;
             layers = <0>;
         };
@@ -178,6 +178,13 @@
             #binding-cells = <0>;
             bindings = <&kp ENTER &kp ENTER>;
             label = "DOUBLE_ENTER";
+        };
+
+        enenter: enenter {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(SEMICOLON) &kp LANGUAGE_2 &kp LANGUAGE_1>;
+            label = "ENENTER";
         };
     };
 

@@ -56,12 +56,6 @@
             layers = <0 1>;
         };
 
-        combo_double_enter {
-            bindings = <&double_enter>;
-            key-positions = <16 36>;
-            layers = <0>;
-        };
-
         combo_jp {
             bindings = <&kp LANGUAGE_1>;
             key-positions = <16 17>;
@@ -131,13 +125,13 @@
 
         combo_tab {
             bindings = <&kp TAB>;
-            key-positions = <2 3>;
+            key-positions = <13 33>;
             layers = <0 1>;
         };
 
         combo_bs {
             bindings = <&kp BACKSPACE>;
-            key-positions = <6 7>;
+            key-positions = <16 36>;
             layers = <0 1>;
         };
     };

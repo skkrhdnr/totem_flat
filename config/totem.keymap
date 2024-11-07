@@ -287,12 +287,12 @@
             bindings = <
               &kp Q             &kp W            &kp E                  &kp R             &kp T                  &kp Y                 &kp U              &kp I             &kp O             &kp P
               &cm_left LCTRL A  &cm_left LALT S  &cm_left LGUI D        &cm_left LSHFT F  &cm_left LS(LGUI) G    &cm_right RS(RGUI) H  &cm_right RSHFT J  &cm_right RGUI K  &cm_right RALT L  &kp MINUS
-&lp 4 ESCAPE  &kp Z             &kp X            &kp C                  &lp_left 3 V      &kp B                  &kp N                 &lp_right 3 M      &kp COMMA         &kp PERIOD        &kp SLASH  &kp UNDERSCORE
-                                                 &lp_left 8 LANGUAGE_2  &lp 2 SPACE       &lp 6 TAB              &lp 4 BACKSPACE       &lpy 1 ENTER       &kp LANGUAGE_1
+&lp 6 ESCAPE  &kp Z             &kp X            &kp C                  &lp_left 3 V      &kp B                  &kp N                 &lp_right 3 M      &kp COMMA         &kp PERIOD        &kp SLASH  &kp UNDERSCORE
+                                                 &lp_left 4 LANGUAGE_2  &lp 2 SPACE       &lp 5 TAB              &lp 6 BACKSPACE       &lpy 1 ENTER       &kp LANGUAGE_1
             >;
         };
 
-        nav_layer {
+        nav {
             label = "NAV";
             bindings = <
        &none         &kp LG(LEFT_ARROW)  &kp UP_ARROW    &kp LG(RIGHT)    &kp LG(T)        &trans     &trans     &trans    &trans    &trans
@@ -302,7 +302,7 @@
             >;
         };
 
-        sym_layer {
+        sym {
             label = "SYM";
             bindings = <
        &kp EXCL  &kp AT    &kp HASH   &kp DLLR  &kp PRCNT    &kp CARET     &kp AMPS  &kp STAR  &kp LBRC   &kp RBRC
@@ -312,7 +312,7 @@
             >;
         };
 
-        num_layer {
+        num {
             label = "NUM";
             bindings = <
        &none  &kp F7  &kp F8  &kp F9    &kp F12      &none          &kp N7        &kp N8  &kp N9  &none
@@ -322,7 +322,27 @@
             >;
         };
 
-        fnc_layer {
+        numpad {
+            label = "NUM";
+            bindings = <
+       &none  &kp F7  &kp F8  &kp F9    &kp F12      &none          &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &none
+       &none  &kp F4  &kp F5  &kp F6    &kp F11      &kp PLUS       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS
+&none  &none  &kp F1  &kp F2  &kp F3    &kp F10      &kp STAR       &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_N3        &kp FSLH   &none
+                      &none   &kp LEFT  &kp RIGHT    &kp BACKSPACE  &kp KP_NUMBER_0  &none
+            >;
+        };
+
+        numcom {
+            label = "NUM";
+            bindings = <
+       &kp LG(Q)  &kp LG(W)  &kp LG(E)  &kp LG(R)  &kp LG(T)    &none          &kp N7        &kp N8  &kp N9  &none
+       &kp LG(A)  &kp LG(S)  &kp LG(D)  &kp LG(F)  &kp LG(G)    &kp PLUS       &kp N4        &kp N5  &kp N6  &kp MINUS
+&none  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(B)    &kp STAR       &kp N1        &kp N2  &kp N3  &kp FSLH   &none
+                             &none      &none      &none        &kp BACKSPACE  &kp NUMBER_0  &none
+            >;
+        };
+
+        fnc {
             label = "FNC";
             bindings = <
        &none  &kp LG(LEFT_BRACKET)  &kp LG(UP_ARROW)    &kp LG(RIGHT_BRACKET)  &none            &kp C_PP    &kp C_PREVIOUS        &kp C_NEXT            &none  &none
@@ -341,32 +361,12 @@
             >;
         };
 
-        numcom {
-            label = "NUM";
-            bindings = <
-       &kp LG(Q)  &kp LG(W)  &kp LG(E)  &kp LG(R)  &kp LG(T)    &none          &kp N7        &kp N8  &kp N9  &none
-       &kp LG(A)  &kp LG(S)  &kp LG(D)  &kp LG(F)  &kp LG(G)    &kp PLUS       &kp N4        &kp N5  &kp N6  &kp MINUS
-&none  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(B)    &kp STAR       &kp N1        &kp N2  &kp N3  &kp FSLH   &none
-                             &none      &none      &none        &kp BACKSPACE  &kp NUMBER_0  &none
-            >;
-        };
-
         fc {
             bindings = <
        &none  &none  &kp E  &none  &kp T    &none  &kp U  &kp I      &kp O    &none
        &none  &kp S  &kp D  &kp F  &kp G    &none  &kp J  &kp K      &kp L    &none
 &none  &none  &none  &none  &none  &kp B    &none  &kp M  &kp COMMA  &kp DOT  &none  &none
                      &none  &kp A  &kp A    &kp A  &kp A  &none
-            >;
-        };
-
-        numpad {
-            label = "NUM";
-            bindings = <
-       &none  &kp F7  &kp F8  &kp F9    &kp F12      &none          &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &none
-       &none  &kp F4  &kp F5  &kp F6    &kp F11      &kp PLUS       &kp KP_N3        &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS
-&none  &none  &kp F1  &kp F2  &kp F3    &kp F10      &kp STAR       &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_N3        &kp FSLH   &none
-                      &none   &kp LEFT  &kp RIGHT    &kp BACKSPACE  &kp KP_NUMBER_0  &none
             >;
         };
 

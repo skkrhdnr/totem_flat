@@ -139,7 +139,7 @@
         combo_base-ons {
             bindings = <&tog 1>;
             key-positions = <32 37>;
-            layers = <0>;
+            layers = <0 1>;
         };
     };
 

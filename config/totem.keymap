@@ -46,93 +46,99 @@
         combo_ctrl_en {
             bindings = <&enenter>;
             key-positions = <16 18>;
-            layers = <0>;
+            layers = <0 1>;
         };
 
         combo_caps {
             bindings = <&caps_word>;
             key-positions = <13 16>;
             timeout-ms = <COMBO_MS>;
-            layers = <0>;
+            layers = <0 1>;
         };
 
         combo_jp {
             bindings = <&kp LANGUAGE_1>;
             key-positions = <16 17>;
-            layers = <0>;
+            layers = <0 1>;
             require-prior-idle-ms = <50>;
         };
 
         combo_en {
             bindings = <&kp LANGUAGE_2>;
             key-positions = <12 13>;
-            layers = <0>;
+            layers = <0 1>;
             require-prior-idle-ms = <50>;
         };
 
         combo_src {
             bindings = <&combo_src>;
             key-positions = <34 35>;
-            layers = <0>;
+            layers = <0 1>;
         };
 
         comb_next_tab {
             bindings = <&kp RC(TAB)>;
             key-positions = <12 13>;
-            layers = <1>;
+            layers = <2>;
         };
 
         combo_prev_tab {
             bindings = <&kp RC(RS(TAB))>;
             key-positions = <12 11>;
-            layers = <1>;
+            layers = <2>;
         };
 
         combo_next_app {
             bindings = <&kp RG(TAB)>;
             key-positions = <2 3>;
-            layers = <1>;
+            layers = <2>;
         };
 
         comb_prev_app {
             bindings = <&kp RG(RS(TAB))>;
             key-positions = <2 1>;
-            layers = <1>;
+            layers = <2>;
         };
 
         combo_next_window {
             bindings = <&kp RA(TAB)>;
             key-positions = <23 24>;
-            layers = <1>;
+            layers = <2>;
         };
 
         combo_prev_window {
             bindings = <&kp RA(RS(TAB))>;
             key-positions = <23 22>;
-            layers = <1>;
+            layers = <2>;
         };
 
         combo_esc {
             bindings = <&kp ESCAPE>;
             key-positions = <11 13>;
-            layers = <0>;
+            layers = <0 1>;
         };
 
         combo_tab {
             bindings = <&kp TAB>;
             key-positions = <13 33>;
-            layers = <0>;
+            layers = <0 1>;
         };
 
         combo_bs {
             bindings = <&kp BACKSPACE>;
             key-positions = <16 36>;
-            layers = <0>;
+            layers = <0 1>;
         };
 
         combo_y {
             bindings = <&kp Y>;
             key-positions = <3 4>;
+            layers = <0 1>;
+        };
+
+        combo_base-ons {
+            bindings = <&tog 1>;
+            key-positions = <32 37>;
             layers = <0>;
         };
     };
@@ -287,8 +293,18 @@
             bindings = <
               &kp Q             &kp W            &kp E                  &kp R             &kp T                  &kp Y                 &kp U              &kp I             &kp O             &kp P
               &cm_left LCTRL A  &cm_left LALT S  &cm_left LGUI D        &cm_left LSHFT F  &cm_left LS(LGUI) G    &cm_right RS(RGUI) H  &cm_right RSHFT J  &cm_right RGUI K  &cm_right RALT L  &kp MINUS
-&lp 6 ESCAPE  &kp Z             &kp X            &kp C                  &lp_left 3 V      &kp B                  &kp N                 &lp_right 3 M      &kp COMMA         &kp PERIOD        &kp SLASH  &kp UNDERSCORE
-                                                 &lp_left 4 LANGUAGE_2  &lp 2 SPACE       &lp 5 TAB              &lp 6 BACKSPACE       &lpy 1 ENTER       &kp LANGUAGE_1
+&lp 7 ESCAPE  &kp Z             &kp X            &kp C                  &lp_left 4 V      &kp B                  &kp N                 &lp_right 4 M      &kp COMMA         &kp PERIOD        &kp SLASH  &kp UNDERSCORE
+                                                 &lp_left 5 LANGUAGE_2  &lp 3 SPACE       &lp 6 TAB              &lp 7 BACKSPACE       &lpy 2 ENTER       &kp LANGUAGE_1
+            >;
+        };
+
+        ons {
+            label = "ONS";
+            bindings = <
+              &kp Q             &kp L            &kp U                  &kp COMMA         &kp PERIOD                 &kp F                 &kp W              &kp R             &kp Y             &kp P
+              &cm_left LCTRL E  &cm_left LALT I  &cm_left LGUI A        &cm_left LSHFT O  &cm_left LS(LGUI) MINUS    &cm_right RS(RGUI) K  &cm_right RSHFT T  &cm_right RGUI N  &cm_right RALT S  &kp H
+&lp 7 ESCAPE  &kp Z             &kp X            &kp C                  &lp_left 4 V      &kp SEMICOLON              &kp G                 &lp_right 4 D      &kp M             &kp J             &kp B  &kp UNDERSCORE
+                                                 &lp_left 5 LANGUAGE_2  &lp 3 SPACE       &lp 6 TAB                  &lp 7 BACKSPACE       &lpy 2 ENTER       &kp LANGUAGE_1
             >;
         };
 
@@ -323,7 +339,7 @@
         };
 
         numpad {
-            label = "NUM";
+            label = "NUMPAD";
             bindings = <
        &none  &kp F7  &kp F8  &kp F9    &kp F12      &none          &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &none
        &none  &kp F4  &kp F5  &kp F6    &kp F11      &kp PLUS       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS
@@ -333,7 +349,7 @@
         };
 
         numcom {
-            label = "NUM";
+            label = "NUMCOM";
             bindings = <
        &kp LG(Q)  &kp LG(W)  &kp LG(E)  &kp LG(R)  &kp LG(T)    &none          &kp N7        &kp N8  &kp N9  &none
        &kp LG(A)  &kp LG(S)  &kp LG(D)  &kp LG(F)  &kp LG(G)    &kp PLUS       &kp N4        &kp N5  &kp N6  &kp MINUS

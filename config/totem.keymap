@@ -76,18 +76,6 @@
             layers = <0 1>;
         };
 
-        comb_next_tab {
-            bindings = <&kp RC(TAB)>;
-            key-positions = <12 13>;
-            layers = <2>;
-        };
-
-        combo_prev_tab {
-            bindings = <&kp RC(RS(TAB))>;
-            key-positions = <12 11>;
-            layers = <2>;
-        };
-
         combo_next_app {
             bindings = <&kp RG(TAB)>;
             key-positions = <2 3>;
@@ -311,10 +299,10 @@
         nav {
             label = "NAV";
             bindings = <
-       &none         &kp LG(LEFT_ARROW)  &kp UP_ARROW    &kp LG(RIGHT)    &kp LG(T)        &trans     &trans     &trans    &trans    &trans
-       &kp LA(LEFT)  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LA(RIGHT)    &kp RCTRL  &kp RSHFT  &kp RGUI  &kp RALT  &kp RCTRL
-&none  &kp LG(Z)     &kp LG(X)           &kp LG(C)       &kp LG(V)        &kp LG(B)        &trans     &none      &none     &none     &none      &none
-                                         &none           &kp SPACE        &kp TAB          &none      &none      &none
+       &none         &kp LC(LS(TAB))  &kp UP_ARROW    &kp LC(TAB)      &kp LG(T)        &trans     &trans     &trans    &trans    &trans
+       &kp LA(LEFT)  &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LA(RIGHT)    &kp RCTRL  &kp RSHFT  &kp RGUI  &kp RALT  &kp RCTRL
+&none  &kp LG(Z)     &kp LG(X)        &kp LG(C)       &kp LG(V)        &kp LG(B)        &trans     &none      &none     &none     &none      &none
+                                      &none           &kp SPACE        &kp TAB          &none      &none      &none
             >;
         };
 

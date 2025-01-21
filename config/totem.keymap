@@ -301,7 +301,7 @@
             bindings = <
        &none         &kp LC(LS(TAB))  &kp UP_ARROW    &kp LC(TAB)      &kp LG(T)        &trans     &trans     &trans    &trans    &trans
        &kp LA(LEFT)  &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LA(RIGHT)    &kp RCTRL  &kp RSHFT  &kp RGUI  &kp RALT  &kp RCTRL
-&none  &kp LG(Z)     &kp LG(X)        &kp LG(C)       &kp LG(V)        &kp LG(LS(B))    &trans     &none      &none     &none     &none      &none
+&none  &kp LG(Z)     &kp LG(X)        &kp LG(C)       &kp LG(V)        &kp LG(LS(V))    &trans     &none      &none     &none     &none      &none
                                       &none           &kp SPACE        &kp TAB          &none      &none      &none
             >;
         };

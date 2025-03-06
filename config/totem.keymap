@@ -99,6 +99,12 @@
             key-positions = <13 14>;
             layers = <0>;
         };
+
+        toggle_basic {
+            bindings = <&tog 1>;
+            key-positions = <32 37>;
+            layers = <0 1>;
+        };
     };
 
     macros {
@@ -236,9 +242,18 @@
             label = "BASE";
             bindings = <
                       &kp Q         &kp W             &kp E                  &kp R             &kp T                    &kp Y                      &kp U              &kp I             &kp O             &kp P
-                      &lp_left 4 A  &cm_left LCTRL S  &cm_left LGUI D        &cm_left LSHFT F  &cm_left LG(LSHIFT) G    &cm_right RS(RIGHT_GUI) H  &cm_right RSHFT J  &cm_right RGUI K  &cm_right RALT L  &kp MINUS
-&cm_left LALT ESCAPE  &kp Z         &kp X             &kp C                  &kp V             &kp B                    &kp N                      &kp M              &kp COMMA         &kp PERIOD        &kp SLASH  &lp 7 RS(RG(J))
-                                                      &lp_left 3 LANGUAGE_2  &lp 2 SPACE       &lp_left 5 TAB           &lp 6 BACKSPACE            &lpy 1 ENTER       &lp 4 LANGUAGE_1
+                      &lp_left 5 A  &cm_left LCTRL S  &cm_left LGUI D        &cm_left LSHFT F  &cm_left LG(LSHIFT) G    &cm_right RS(RIGHT_GUI) H  &cm_right RSHFT J  &cm_right RGUI K  &cm_right RALT L  &kp MINUS
+&cm_left LALT ESCAPE  &kp Z         &kp X             &kp C                  &kp V             &kp B                    &kp N                      &kp M              &kp COMMA         &kp PERIOD        &kp SLASH  &lp 8 RS(RG(J))
+                                                      &lp_left 4 LANGUAGE_2  &lp 3 SPACE       &lp_left 6 TAB           &lp 7 BACKSPACE            &lpy 2 ENTER       &lp 5 LANGUAGE_1
+            >;
+        };
+
+        basic {
+            bindings = <
+         &kp Q  &kp W  &kp E   &kp R      &kp T      &kp Y     &kp U    &kp I      &kp O    &kp P
+         &kp A  &kp S  &kp D   &kp F      &kp G      &kp H     &kp J    &kp K      &kp L    &kp MINUS
+&kp ESC  &kp Z  &kp X  &kp C   &kp V      &kp B      &kp N     &kp M    &kp COMMA  &kp DOT  &kp FSLH   &trans
+                       &trans  &kp SPACE  &kp TAB    &kp BSPC  &kp RET  &trans
             >;
         };
 

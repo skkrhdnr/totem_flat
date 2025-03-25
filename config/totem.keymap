@@ -99,12 +99,6 @@
             key-positions = <13 14>;
             layers = <0>;
         };
-
-        toggle_basic {
-            bindings = <&tog 1>;
-            key-positions = <32 37>;
-            layers = <0 1>;
-        };
     };
 
     macros {

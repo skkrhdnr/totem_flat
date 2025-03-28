@@ -58,14 +58,14 @@
 
         combo_jp {
             bindings = <&kp LANGUAGE_1>;
-            key-positions = <16 17>;
+            key-positions = <6 7>;
             layers = <0>;
             require-prior-idle-ms = <50>;
         };
 
         combo_en {
             bindings = <&kp LANGUAGE_2>;
-            key-positions = <12 13>;
+            key-positions = <2 3>;
             layers = <0>;
             require-prior-idle-ms = <50>;
         };
@@ -84,13 +84,13 @@
 
         combo_tab {
             bindings = <&kp TAB>;
-            key-positions = <13 33>;
+            key-positions = <13 12>;
             layers = <0>;
         };
 
         combo_bs {
             bindings = <&kp BACKSPACE>;
-            key-positions = <16 36>;
+            key-positions = <16 17>;
             layers = <0>;
         };
 
@@ -236,18 +236,9 @@
             label = "BASE";
             bindings = <
                       &kp Q         &kp W             &kp E                  &kp R             &kp T                    &kp Y                      &kp U              &kp I             &kp O             &kp P
-                      &lp_left 5 A  &cm_left LCTRL S  &cm_left LGUI D        &cm_left LSHFT F  &cm_left LG(LSHIFT) G    &cm_right RS(RIGHT_GUI) H  &cm_right RSHFT J  &cm_right RGUI K  &cm_right RALT L  &kp MINUS
-&cm_left LALT ESCAPE  &kp Z         &kp X             &kp C                  &kp V             &kp B                    &kp N                      &kp M              &kp COMMA         &kp PERIOD        &kp SLASH  &lp 8 RS(RG(J))
-                                                      &lp_left 4 LANGUAGE_2  &lp 3 SPACE       &lp_left 6 TAB           &lp 7 BACKSPACE            &lpy 2 ENTER       &lp 5 LANGUAGE_1
-            >;
-        };
-
-        basic {
-            bindings = <
-         &kp Q  &kp W  &kp E   &kp R      &kp T      &kp Y     &kp U    &kp I      &kp O    &kp P
-         &kp A  &kp S  &kp D   &kp F      &kp G      &kp H     &kp J    &kp K      &kp L    &kp MINUS
-&kp ESC  &kp Z  &kp X  &kp C   &kp V      &kp B      &kp N     &kp M    &kp COMMA  &kp DOT  &kp FSLH   &trans
-                       &trans  &kp SPACE  &kp TAB    &kp BSPC  &kp RET  &trans
+                      &lp_left 4 A  &cm_left LCTRL S  &cm_left LGUI D        &cm_left LSHFT F  &cm_left LG(LSHIFT) G    &cm_right RS(RIGHT_GUI) H  &cm_right RSHFT J  &cm_right RGUI K  &cm_right RALT L  &kp MINUS
+&cm_left LALT ESCAPE  &kp Z         &kp X             &kp C                  &kp V             &kp B                    &kp N                      &kp M              &kp COMMA         &kp PERIOD        &kp SLASH  &lp 7 RS(RG(J))
+                                                      &lp_left 3 LANGUAGE_2  &lp 2 SPACE       &lp_left 5 TAB           &lp 6 BACKSPACE            &lpy 1 ENTER       &lp 4 LANGUAGE_1
             >;
         };
 
@@ -264,17 +255,17 @@
         sym {
             label = "SYM";
             bindings = <
-       &kp EXCL  &kp AT    &kp HASH   &kp DLLR  &kp PRCNT    &kp CARET     &kp AMPS  &kp STAR  &kp LBRC   &kp RBRC
-       &kp BSLH  &kp PIPE  &kp EQUAL  &kp PLUS  &none        &kp GRAVE     &kp SQT   &kp DQT   &kp COLON  &kp SEMI
-&none  &none     &none     &none      &none     &none        &none         &kp LPAR  &kp RPAR  &kp LBKT   &kp RBKT  &none
-                           &none      &none     &none        &kp QUESTION  &kp EXCL  &none
+       &kp EXCL  &kp AT    &kp HASH   &kp DLLR  &kp PRCNT    &kp CARET     &kp AMPS  &kp STAR     &kp LBRC   &kp RBRC
+       &kp BSLH  &kp PIPE  &kp EQUAL  &kp PLUS  &none        &kp GRAVE     &kp SQT   &kp DQT      &kp COLON  &kp SEMI
+&none  &none     &none     &none      &none     &none        &none         &kp LPAR  &kp RPAR     &kp LBKT   &kp RBKT  &none
+                           &none      &none     &none        &kp QUESTION  &kp EXCL  &kp INT_YEN
             >;
         };
 
         num {
             label = "NUM";
             bindings = <
-       &none  &kp F7  &kp F8  &kp F9    &kp F12      &none          &kp N7        &kp N8  &kp N9  &kp KP_EQUAL
+       &none  &kp F7  &kp F8  &kp F9    &kp F12      &kp INT_YEN    &kp N7        &kp N8  &kp N9  &kp KP_EQUAL
        &none  &kp F4  &kp F5  &kp F6    &kp F11      &kp PLUS       &kp N4        &kp N5  &kp N6  &kp MINUS
 &none  &none  &kp F1  &kp F2  &kp F3    &kp F10      &kp STAR       &kp N1        &kp N2  &kp N3  &kp FSLH      &none
                       &none   &kp LEFT  &kp RIGHT    &kp BACKSPACE  &kp NUMBER_0  &none
@@ -284,7 +275,7 @@
         numpad {
             label = "NUMPAD";
             bindings = <
-       &none  &kp F7  &kp F8  &kp F9    &kp F12      &none          &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_EQUAL
+       &none  &kp F7  &kp F8  &kp F9    &kp F12      &kp INT_YEN    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_EQUAL
        &none  &kp F4  &kp F5  &kp F6    &kp F11      &kp PLUS       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS
 &none  &none  &kp F1  &kp F2  &kp F3    &kp F10      &kp STAR       &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_N3        &kp FSLH      &none
                       &none   &kp LEFT  &kp RIGHT    &kp BACKSPACE  &kp KP_NUMBER_0  &none
@@ -294,7 +285,7 @@
         numcom {
             label = "NUMCOM";
             bindings = <
-       &kp LG(Q)  &kp LG(W)  &kp LG(E)  &kp LG(R)  &kp LG(T)    &none          &kp N7        &kp N8  &kp N9  &kp KP_EQUAL
+       &kp LG(Q)  &kp LG(W)  &kp LG(E)  &kp LG(R)  &kp LG(T)    &kp INT_YEN    &kp N7        &kp N8  &kp N9  &kp KP_EQUAL
        &kp LG(A)  &kp LG(S)  &kp LG(D)  &kp LG(F)  &kp LG(G)    &kp PLUS       &kp N4        &kp N5  &kp N6  &kp MINUS
 &none  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(B)    &kp STAR       &kp N1        &kp N2  &kp N3  &kp FSLH      &none
                              &none      &none      &none        &kp BACKSPACE  &kp NUMBER_0  &none

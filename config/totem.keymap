@@ -58,14 +58,14 @@
 
         combo_jp {
             bindings = <&kp LANGUAGE_1>;
-            key-positions = <6 7>;
+            key-positions = <16 17>;
             layers = <0>;
             require-prior-idle-ms = <50>;
         };
 
         combo_en {
             bindings = <&kp LANGUAGE_2>;
-            key-positions = <2 3>;
+            key-positions = <12 13>;
             layers = <0>;
             require-prior-idle-ms = <50>;
         };
@@ -84,13 +84,13 @@
 
         combo_tab {
             bindings = <&kp TAB>;
-            key-positions = <13 12>;
+            key-positions = <>;
             layers = <0>;
         };
 
         combo_bs {
             bindings = <&kp BACKSPACE>;
-            key-positions = <16 17>;
+            key-positions = <>;
             layers = <0>;
         };
 

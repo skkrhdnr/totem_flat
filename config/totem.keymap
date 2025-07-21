@@ -228,10 +228,10 @@
         base_layer {
             label = "BASE";
             bindings = <
-                      &kp Q         &kp W                    &kp E                  &kp R             &kp T                    &kp Y                      &kp U              &kp I             &kp O             &kp P
-                      &lp_left 5 A  &cm_left LEFT_CONTROL S  &cm_left LGUI D        &cm_left LSHFT F  &cm_left LG(LSHIFT) G    &cm_right RS(RIGHT_GUI) H  &cm_right RSHFT J  &cm_right RGUI K  &cm_right RALT L  &kp MINUS
-&cm_left LALT ESCAPE  &kp Z         &cm_left LEFT_ALT X      &kp C                  &kp V             &kp B                    &kp N                      &kp M              &kp COMMA         &kp PERIOD        &kp SLASH  &lp 8 RS(RG(J))
-                                                             &lp_left 4 LANGUAGE_2  &lp 3 SPACE       &lp_left 6 TAB           &lp 7 BACKSPACE            &lpy 2 ENTER       &lp 5 LANGUAGE_1
+                      &kp Q             &kp W                &kp E                  &kp R             &kp T                    &kp Y                      &kp U              &kp I             &kp O             &kp P
+                      &cm_left LCTRL A  &cm_left LALT S      &cm_left LGUI D        &cm_left LSHFT F  &cm_left LG(LSHIFT) G    &cm_right RS(RIGHT_GUI) H  &cm_right RSHFT J  &cm_right RGUI K  &cm_right RALT L  &kp MINUS
+&cm_left LALT ESCAPE  &kp Z             &cm_left LEFT_ALT X  &kp C                  &kp V             &kp B                    &kp N                      &kp M              &kp COMMA         &kp PERIOD        &kp SLASH  &lp 8 RS(RG(J))
+                                                             &lp_left 4 LANGUAGE_2  &lp 5 SPACE       &lp_left 3 TAB           &lp 7 BACKSPACE            &lpy 2 ENTER       &lp 5 LANGUAGE_1
             >;
         };
 

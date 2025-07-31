@@ -126,18 +126,8 @@
         compatible = "zmk,behavior-hold-tap";
         label = "LAYER|KP";
         flavor = "hold-preferred";
-        tapping-term-ms = <200>;
-        quick-tap-ms = <200>;
-        bindings = <&mo>, <&kp>;
-
-        #binding-cells = <2>;
-    };
-
-    lpy: lpy {
-        compatible = "zmk,behavior-hold-tap";
-        label = "yLAYER|KP";
-        flavor = "hold-preferred";
-        tapping-term-ms = <250>;
+        tapping-term-ms = <160>;
+        quick-tap-ms = <160>;
         bindings = <&mo>, <&kp>;
 
         #binding-cells = <2>;
@@ -146,7 +136,7 @@
     cm_right: cm_right {
         compatible = "zmk,behavior-hold-tap";
         label = "CM_RIGHT";
-        flavor = "tap-preferred";
+        flavor = "tap-unless-interrupted";
         tapping-term-ms = <165>;
         quick-tap-ms = <165>;
 
@@ -155,7 +145,7 @@
         bindings = <&kp>, <&kp>;
 
         #binding-cells = <2>;
-        hold-trigger-key-positions = <25 0 10 11 12 13 20 21 22 23 24 32 0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 25 32 33 34 35>;
+        hold-trigger-key-positions = <25 0 10 11 12 13 20 21 22 23 24 32 0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 25 32 33 34>;
     };
 
     cm_left: cm_left {
@@ -164,9 +154,9 @@
         bindings = <&kp>, <&kp>;
 
         #binding-cells = <2>;
-        tapping-term-ms = <165>;
-        quick-tap-ms = <165>;
-        flavor = "tap-preferred";
+        tapping-term-ms = <160>;
+        quick-tap-ms = <160>;
+        flavor = "tap-unless-interrupted";
         hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 26 27 28 29 30 31 35 36 37>;
     };
 
@@ -205,10 +195,10 @@
         base_layer {
             label = "BASE";
             bindings = <
-                      &kp Q             &kp W            &kp E                  &kp R             &kp T                    &kp Y                      &kp U              &kp I             &kp O             &kp P
-                      &cm_left LCTRL A  &cm_left LALT S  &cm_left LGUI D        &cm_left LSHFT F  &cm_left LG(LSHIFT) G    &cm_right RS(RIGHT_GUI) H  &cm_right RSHFT J  &cm_right RGUI K  &cm_right RALT L  &cm_right RCTRL MINUS
-&cm_left LALT ESCAPE  &kp Z             &lp_left 4 X     &kp C                  &kp V             &kp B                    &kp N                      &kp M              &kp COMMA         &kp PERIOD        &kp SLASH              &lp 6 RS(RG(J))
-                                                         &lp_left 3 LANGUAGE_2  &lp 2 SPACE       &lp_left 4 TAB           &lp 5 BACKSPACE            &lpy 1 ENTER       &lp 4 LANGUAGE_1
+                      &kp Q             &kp W            &kp E             &kp R             &kp T                    &kp Y                      &kp U              &kp I             &kp O             &kp P
+                      &cm_left LCTRL A  &cm_left LALT S  &cm_left LGUI D   &cm_left LSHFT F  &cm_left LG(LSHIFT) G    &cm_right RS(RIGHT_GUI) H  &cm_right RSHFT J  &cm_right RGUI K  &cm_right RALT L  &cm_right RCTRL MINUS
+&cm_left LALT ESCAPE  &kp Z             &kp X            &kp C             &kp V             &kp B                    &kp N                      &kp M              &kp COMMA         &kp PERIOD        &kp SLASH              &lp 6 RS(RG(J))
+                                                         &lp 3 LANGUAGE_2  &lp 2 SPACE       &lp 4 TAB                &lp 5 BACKSPACE            &lp 1 ENTER        &lp 4 LANGUAGE_1
             >;
         };
 

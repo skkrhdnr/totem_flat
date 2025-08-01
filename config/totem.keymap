@@ -127,7 +127,7 @@
         label = "LAYER|KP";
         flavor = "hold-preferred";
         tapping-term-ms = <160>;
-        quick-tap-ms = <50>;
+        quick-tap-ms = <80>;
         bindings = <&mo>, <&kp>;
 
         #binding-cells = <2>;

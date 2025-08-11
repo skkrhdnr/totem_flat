@@ -127,7 +127,7 @@
         label = "LAYER|KP";
         flavor = "hold-preferred";
         tapping-term-ms = <160>;
-        quick-tap-ms = <110>;
+        quick-tap-ms = <105>;
         bindings = <&mo>, <&kp>;
 
         #binding-cells = <2>;
@@ -165,10 +165,10 @@
         nav {
             label = "NAV";
             bindings = <
-       &none        &kp HOME        &kp UP_ARROW       &kp END          &kp LG(T)        &trans     &trans     &trans    &trans    &trans
-       &kp LG(TAB)  &kp LEFT_ARROW  &kp DOWN_ARROW     &kp RIGHT_ARROW  &kp LA(TAB)      &kp RCTRL  &kp RSHFT  &kp RGUI  &kp RALT  &kp RCTRL
-&none  &kp LG(Z)    &kp LG(X)       &kp LG(C)          &kp LG(V)        &kp LG(LS(V))    &trans     &none      &none     &none     &none      &kp GLOBE
-                                    &kp K_APPLICATION  &kp SPACE        &kp TAB          &none      &none      &none
+                 &none        &kp HOME        &kp UP_ARROW       &kp END          &kp LA(LS(TAB))    &trans     &trans     &trans    &trans    &trans
+                 &kp LG(TAB)  &kp LEFT_ARROW  &kp DOWN_ARROW     &kp RIGHT_ARROW  &kp LA(TAB)        &kp RCTRL  &kp RSHFT  &kp RGUI  &kp RALT  &kp RCTRL
+&kp LS(LG(TAB))  &kp LG(Z)    &kp LG(X)       &kp LG(C)          &kp LG(V)        &kp LG(LS(V))      &trans     &none      &none     &none     &none      &kp GLOBE
+                                              &kp K_APPLICATION  &kp SPACE        &kp TAB            &none      &none      &none
             >;
         };
 
@@ -185,10 +185,10 @@
         num {
             label = "NUM";
             bindings = <
-       &none  &kp F7  &kp F8  &kp F9    &kp F12      &kp INT_YEN    &kp N7        &kp N8  &kp N9  &kp KP_EQUAL
-       &none  &kp F4  &kp F5  &kp F6    &kp F11      &kp PLUS       &kp N4        &kp N5  &kp N6  &kp MINUS
-&none  &none  &kp F1  &kp F2  &kp F3    &kp F10      &kp STAR       &kp N1        &kp N2  &kp N3  &kp FSLH      &none
-                      &none   &kp LEFT  &kp RIGHT    &kp BACKSPACE  &kp NUMBER_0  &none
+       &none  &kp F7  &kp F8  &kp F9    &kp F12      &kp INTERNATIONAL_3  &kp N7        &kp N8  &kp N9  &kp KP_EQUAL
+       &none  &kp F4  &kp F5  &kp F6    &kp F11      &kp PLUS             &kp N4        &kp N5  &kp N6  &kp MINUS
+&none  &none  &kp F1  &kp F2  &kp F3    &kp F10      &kp STAR             &kp N1        &kp N2  &kp N3  &kp FSLH      &none
+                      &none   &kp LEFT  &kp RIGHT    &kp BACKSPACE        &kp NUMBER_0  &none
             >;
         };
 
@@ -205,10 +205,10 @@
         fnc {
             label = "FNC";
             bindings = <
-       &none  &kp LG(LEFT_BRACKET)  &kp LG(UP_ARROW)    &kp LG(RIGHT_BRACKET)  &none            &kp C_PP    &kp C_PREVIOUS        &kp C_NEXT            &none  &none
-       &none  &kp LC(LS(TAB))       &kp LG(DOWN_ARROW)  &kp LC(TAB)            &none            &kp K_MUTE  &kp RS(RA(C_VOL_DN))  &kp RS(RA(C_VOL_UP))  &none  &kp C_SLEEP
-&none  &none  &kp RA(UP)            &none               &kp RA(DOWN)           &none            &none       &kp C_BRI_DEC         &kp C_BRI_INC         &none  &none        &none
-                                    &kp LG(N0)          &kp LG(PLUS)           &kp LG(MINUS)    &none       &none                 &none
+       &none  &kp LG(LEFT_BRACKET)  &kp LG(UP_ARROW)    &kp LG(RIGHT_BRACKET)  &none             &kp C_PP    &kp C_PREVIOUS        &kp C_NEXT            &none  &none
+       &none  &kp LC(LS(TAB))       &kp LG(DOWN_ARROW)  &kp LC(TAB)            &kp LS(LG(N4))    &kp K_MUTE  &kp RS(RA(C_VOL_DN))  &kp RS(RA(C_VOL_UP))  &none  &kp C_SLEEP
+&none  &none  &kp RA(UP)            &none               &kp RA(DOWN)           &none             &none       &kp C_BRI_DEC         &kp C_BRI_INC         &none  &none        &none
+                                    &kp LG(N0)          &kp LG(PLUS)           &kp LG(MINUS)     &none       &none                 &none
             >;
         };
 

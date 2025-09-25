@@ -75,6 +75,30 @@
             key-positions = <11 12 13>;
             layers = <0>;
         };
+
+        bt_0 {
+            bindings = <&bt_0>;
+            key-positions = <3 6>;
+            layers = <0>;
+        };
+
+        bt_1 {
+            bindings = <&bt_1>;
+            key-positions = <2 7>;
+            layers = <0>;
+        };
+
+        bt_2 {
+            bindings = <&bt_2>;
+            key-positions = <1 8>;
+            layers = <0>;
+        };
+
+        bt_clr {
+            bindings = <&bt BT_CLR>;
+            key-positions = <0 9>;
+            layers = <0>;
+        };
     };
 
     macros {

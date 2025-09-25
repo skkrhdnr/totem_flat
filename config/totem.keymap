@@ -172,10 +172,10 @@
         base_layer {
             label = "BASE";
             bindings = <
-              &kp Q        &kp W       &kp E             &high_lp 4 R  &kp T               &kp Y                &kp U        &kp I             &kp O       &kp P
+              &kp Q        &kp W       &kp E             &high_lp 7 R  &kp T               &kp Y                &kp U        &kp I             &kp O       &kp P
               &cm LCTRL A  &cm LALT S  &cm LGUI D        &cm LSHFT F   &cm LG(LSHIFT) G    &cm RS(RIGHT_GUI) H  &cm RSHFT J  &cm RGUI K        &cm RALT L  &cm RCTRL MINUS
 &lp 1 ESCAPE  &kp Z        &kp X       &kp C             &kp V         &kp B               &kp N                &kp M        &kp COMMA         &kp PERIOD  &kp SLASH        &lp 6 RS(RG(J))
-                                       &lp 3 LANGUAGE_2  &lp 2 SPACE   &lp 4 TAB           &lp 5 BACKSPACE      &lp 1 ENTER  &lp 4 LANGUAGE_1
+                                       &lp 3 LANGUAGE_2  &lp 2 SPACE   &lp 7 TAB           &lp 5 BACKSPACE      &lp 1 ENTER  &lp 4 LANGUAGE_1
             >;
         };
 
@@ -236,6 +236,16 @@
        &none  &none  &none  &none  &none    &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none       &none
                      &none  &none  &none    &bt_0  &bt_1  &bt_2
+            >;
+        };
+
+        numpad_cpp {
+            label = "NUMPAD";
+            bindings = <
+       &none      &none      &none      &none      &none            &kp INT_YEN      &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_EQUAL
+       &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(LS(V))    &kp KP_PLUS      &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MINUS
+&none  &none      &none      &none      &none      &none            &kp KP_ASTERISK  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_N3        &kp KP_DIVIDE  &none
+                             &none      &kp LEFT   &kp RIGHT        &kp BACKSPACE    &kp KP_NUMBER_0  &none
             >;
         };
 

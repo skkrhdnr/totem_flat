@@ -78,25 +78,25 @@
 
         bt_0 {
             bindings = <&bt_0>;
-            key-positions = <3 6>;
+            key-positions = <24 27>;
             layers = <0>;
         };
 
         bt_1 {
             bindings = <&bt_1>;
-            key-positions = <2 7>;
+            key-positions = <23 28>;
             layers = <0>;
         };
 
         bt_2 {
             bindings = <&bt_2>;
-            key-positions = <1 8>;
+            key-positions = <22 29>;
             layers = <0>;
         };
 
         bt_clr {
             bindings = <&bt BT_CLR>;
-            key-positions = <0 9>;
+            key-positions = <21 30>;
             layers = <0>;
         };
     };

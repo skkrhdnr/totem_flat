@@ -24,14 +24,16 @@
 //            | 32 33 34  |  35 36 37 |
 //             -----------------------
 
-#define BASE 0
-#define NAV  1
-#define NUM  2
-#define SYM  3
-#define FNC  4
-#define INP  5
-#define COMBO_MS  30
-#define COMBO3_MS 50
+#define BASE       0
+#define NAV        1
+#define SYM        2
+#define NUM        3
+#define FNC        4
+#define NUMPAD     5
+#define BT         6
+#define NUMPAD_CPP 7
+#define COMBO_MS   30
+#define COMBO3_MS  50
 
 / {
     combos {
@@ -248,7 +250,7 @@
             bindings = <
        &kp LG(Q)  &kp LG(W)  &kp LG(E)  &kp LG(R)  &kp LG(T)        &none            &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_EQUAL
        &kp LG(A)  &kp LG(S)  &kp LG(D)  &kp LG(F)  &kp LG(G)        &kp KP_PLUS      &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MINUS
-&none  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(LS(B))    &kp KP_ASTERISK  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_N3        &kp KP_DIVIDE  &none
+&none  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(LS(B))    &kp KP_ASTERISK  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DIVIDE  &none
                              &none      &kp LEFT   &kp RIGHT        &kp BACKSPACE    &kp KP_NUMBER_0  &none
             >;
         };
@@ -268,7 +270,7 @@
             bindings = <
        &none      &none      &none      &none      &none            &kp INT_YEN      &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_EQUAL
        &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(LS(V))    &kp KP_PLUS      &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MINUS
-&none  &none      &none      &none      &none      &none            &kp KP_ASTERISK  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_N3        &kp KP_DIVIDE  &none
+&none  &none      &none      &none      &none      &none            &kp KP_ASTERISK  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DIVIDE  &none
                              &none      &kp LEFT   &kp RIGHT        &kp BACKSPACE    &kp KP_NUMBER_0  &none
             >;
         };

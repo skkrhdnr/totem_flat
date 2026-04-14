@@ -196,18 +196,18 @@
         base_layer {
             label = "BASE";
             bindings = <
-              &kp Q        &kp W       &kp E             &high_lp 7 R  &kp T               &kp Y                &kp U        &kp I             &kp O       &kp P
+              &kp Q        &kp W       &kp E             &high_lp 5 R  &kp T               &kp Y                &kp U        &kp I             &kp O       &kp P
               &cm LCTRL A  &cm LALT S  &cm LGUI D        &cm LSHFT F   &cm LG(LSHIFT) G    &cm RS(RIGHT_GUI) H  &cm RSHFT J  &cm RGUI K        &cm RALT L  &cm RCTRL MINUS
 &lp 1 ESCAPE  &kp Z        &kp X       &kp C             &kp V         &kp B               &kp N                &kp M        &kp COMMA         &kp PERIOD  &kp SLASH        &lp 6 RS(RG(J))
-                                       &lp 3 LANGUAGE_2  &lp 2 SPACE   &lp 7 TAB           &lp 5 BACKSPACE      &lp 1 ENTER  &lp 4 LANGUAGE_1
+                                       &lp 3 LANGUAGE_2  &lp 2 SPACE   &lp 5 TAB           &lp 4 BACKSPACE      &lp 1 ENTER  &lp 6 LANGUAGE_1
             >;
         };
 
         nav {
             label = "NAV";
             bindings = <
-                 &none        &kp HOME        &kp UP_ARROW       &kp END          &kp LA(LS(TAB))    &trans     &trans     &trans    &trans    &trans
-                 &kp LG(TAB)  &kp LEFT_ARROW  &kp DOWN_ARROW     &kp RIGHT_ARROW  &kp LA(TAB)        &kp RCTRL  &kp RSHFT  &kp RGUI  &kp RALT  &kp RCTRL
+                 &none        &kp PAGE_DOWN   &kp UP_ARROW       &kp PAGE_DOWN    &kp LA(LS(TAB))    &trans     &bt_0      &bt_1     &bt_2     &trans
+                 &kp LG(TAB)  &kp LEFT_ARROW  &kp DOWN_ARROW     &kp RIGHT_ARROW  &kp LA(TAB)        &kp GLOBE  &kp RSHFT  &kp RGUI  &kp RALT  &kp RCTRL
 &kp LS(LG(TAB))  &kp LG(Z)    &kp LG(X)       &kp LG(C)          &kp LG(V)        &kp LG(LS(V))      &trans     &none      &none     &none     &none      &kp GLOBE
                                               &kp K_APPLICATION  &kp SPACE        &kp TAB            &none      &kp RSHFT  &none
             >;
@@ -226,30 +226,30 @@
         num {
             label = "NUM";
             bindings = <
-       &none  &kp F7  &kp F8  &kp F9    &kp F12      &kp INTERNATIONAL_3  &kp N7        &kp N8  &kp N9  &kp KP_EQUAL
-       &none  &kp F4  &kp F5  &kp F6    &kp F11      &kp PLUS             &kp N4        &kp N5  &kp N6  &kp MINUS
-&none  &none  &kp F1  &kp F2  &kp F3    &kp F10      &kp STAR             &kp N1        &kp N2  &kp N3  &kp FSLH      &none
-                      &none   &kp LEFT  &kp RIGHT    &kp BACKSPACE        &kp NUMBER_0  &none
-            >;
-        };
-
-        numpad {
-            label = "NUMPAD";
-            bindings = <
-       &none  &kp F7  &kp F8  &kp F9    &kp F12      &kp INT_YEN      &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_EQUAL
-       &none  &kp F4  &kp F5  &kp F6    &kp F11      &kp KP_PLUS      &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MINUS
-&none  &none  &kp F1  &kp F2  &kp F3    &kp F10      &kp KP_ASTERISK  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_N3        &kp KP_DIVIDE  &none
-                      &none   &kp LEFT  &kp RIGHT    &kp BACKSPACE    &kp KP_NUMBER_0  &none
+       &none  &kp F7  &kp F8  &kp F9    &kp F12      &none          &kp N7        &kp N8  &kp N9  &kp EQUAL
+       &none  &kp F4  &kp F5  &kp F6    &kp F11      &kp PLUS       &kp N4        &kp N5  &kp N6  &kp MINUS
+&none  &none  &kp F1  &kp F2  &kp F3    &kp F10      &kp STAR       &kp N1        &kp N2  &kp N3  &kp FSLH   &none
+                      &none   &kp LEFT  &kp RIGHT    &kp BACKSPACE  &kp NUMBER_0  &none
             >;
         };
 
         fnc {
             label = "FNC";
             bindings = <
-       &none  &kp LG(LEFT_BRACKET)  &kp LG(UP_ARROW)    &kp LG(RIGHT_BRACKET)  &none             &kp C_PP    &kp C_PREVIOUS        &kp C_NEXT            &none  &none
-       &none  &kp LC(LS(TAB))       &kp LG(DOWN_ARROW)  &kp LC(TAB)            &kp LS(LG(N4))    &kp K_MUTE  &kp RS(RA(C_VOL_DN))  &kp RS(RA(C_VOL_UP))  &none  &kp C_SLEEP
-&none  &none  &kp RA(UP)            &none               &kp RA(DOWN)           &none             &none       &kp C_BRI_DEC         &kp C_BRI_INC         &none  &none        &none
-                                    &kp LG(N0)          &kp LG(PLUS)           &kp LG(MINUS)     &none       &none                 &none
+       &none  &kp LG(LEFT_BRACKET)  &kp LG(TAB)  &kp LG(RIGHT_BRACKET)  &none             &kp C_PP    &kp C_PREVIOUS        &kp C_NEXT            &none  &none
+       &none  &kp LC(LS(TAB))       &kp LA(TAB)  &kp LC(TAB)            &kp LS(LG(N4))    &kp K_MUTE  &kp RS(RA(C_VOL_DN))  &kp RS(RA(C_VOL_UP))  &none  &kp C_SLEEP
+&none  &none  &kp RA(UP)            &none        &kp RA(DOWN)           &none             &none       &kp C_BRI_DEC         &kp C_BRI_INC         &none  &none        &none
+                                    &kp LG(N0)   &kp LG(PLUS)           &kp LG(MINUS)     &none       &none                 &none
+            >;
+        };
+
+        numpad {
+            label = "NUMPAD";
+            bindings = <
+       &kp LG(Q)  &kp LG(W)  &kp LG(E)  &kp LG(R)  &kp LG(T)        &none            &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_EQUAL
+       &kp LG(A)  &kp LG(S)  &kp LG(D)  &kp LG(F)  &kp LG(G)        &kp KP_PLUS      &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MINUS
+&none  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(LS(B))    &kp KP_ASTERISK  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_N3        &kp KP_DIVIDE  &none
+                             &none      &kp LEFT   &kp RIGHT        &kp BACKSPACE    &kp KP_NUMBER_0  &none
             >;
         };
 
